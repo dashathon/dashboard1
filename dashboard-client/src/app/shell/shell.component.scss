@@ -1,11 +1,19 @@
-.wrapper-row {
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div[class^="clr-col"] {
     height: 100%;
 }
 
-.stacked-row {
-    padding-top: 24px;
+.clr-row {
+    height: calc(100% / 3 - 12px);
 }
 
-.half-height {
-    height: 50%;
+::ng-deep .card-body {
+    height: calc(100% - 49px);
+    width: 100%;
 }

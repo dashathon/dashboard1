@@ -1,0 +1,1602 @@
+{
+    "formId": "1AtEnO5utgZjT-npLj-rmhd_1oQQU2lwd-SQZOPvOJPs",
+    "info": {
+        "title": "Hackathon Survey",
+        "description": "As an attendee of the [HACKATHON_NAME] hackathon you are invited to complete the following survey. This hackathon is organized by [HACKATHON_ORGANIZERS]. The main purpose of this survey is [SURVEY_PURPOSE].\n\nThe questions are mostly multiple choice / agree-disagree and will take approximately 10 minutes to answer. The risks that are associated with this survey are no greater than those ordinarily encountered in daily life. Your decision regarding whether or not to participate in this study will not result in any loss of benefits to which you are otherwise entitled. Your participation in this survey is voluntary and you may discontinue participation at any time. Your responses will be de-identified and will remain confidential to the study team.\n\nAnonymized responses to this survey might also be shared with a group of researchers at the University of Tartu. \n\nIf you have any further questions about the survey, please contact [ROLE] [HACKATHON_ORGANIZER_NAME] (HACKATHON_ORGANIZER_EMAIL).",
+        "documentTitle": "HackathonFullSurvey"
+    },
+    "revisionId": "00000002",
+    "responderUri": "https://docs.google.com/forms/d/e/1FAIpQLSe6Zdf6ddcSZ9l751OXp7QAsEMOCdS1EB88x4IZ8BnlnwNoBg/viewform",
+    "items": [
+        {
+            "itemId": "0fccc4d8",
+            "title": "I am age 18 or older, I have read and understood the above information and I wish to participate in the research and continue with the survey.",
+            "description": "Please read the statement carefully and only answer \"yes\" if you agree to all of the above. Your participation in this research is voluntary. You may discontinue participation at any time during the research activity. Your decision regarding whether or not to participate in this study will not result in any loss of benefits to which you are otherwise entitled.",
+            "questionItem": {
+                "question": {
+                    "questionId": "3ffeb2e4",
+                    "required": true,
+                    "choiceQuestion": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Yes",
+                                "goToAction": "NEXT_SECTION"
+                            },
+                            {
+                                "value": "No",
+                                "goToAction": "SUBMIT_FORM"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "itemId": "6bcc5186",
+            "pageBreakItem": {},
+            "title": "Previous experiences and motivation",
+            "description": "The following questions are related to your prior hackathon experience and your motivations to participate in this event."
+        },
+        {
+            "itemId": "44ac126a",
+            "title": "How many hackathons have you participated in the past?",
+            "description": "If you cannot recall the exact number please provide a rough estimate.",
+            "questionItem": {
+                "question": {
+                    "questionId": "14699c57",
+                    "textQuestion": {}
+                }
+            }
+        },
+        {
+            "itemId": "73862f2b",
+            "questionGroupItem": {
+                "questions": [
+                    {
+                        "questionId": "3fae383c",
+                        "rowQuestion": {
+                            "title": "Having fun"
+                        }
+                    },
+                    {
+                        "questionId": "41f53ca0",
+                        "rowQuestion": {
+                            "title": "Making something cool / Working on an interesting project idea"
+                        }
+                    },
+                    {
+                        "questionId": "3aa623f2",
+                        "rowQuestion": {
+                            "title": "Dedicated time to get work done"
+                        }
+                    },
+                    {
+                        "questionId": "0794b69b",
+                        "rowQuestion": {
+                            "title": "Learning about [PURPOSE]"
+                        }
+                    },
+                    {
+                        "questionId": "51d1f2f7",
+                        "rowQuestion": {
+                            "title": "Meeting new people"
+                        }
+                    },
+                    {
+                        "questionId": "75bd6644",
+                        "rowQuestion": {
+                            "title": "Seeing what others are working on"
+                        }
+                    },
+                    {
+                        "questionId": "7aebcdaf",
+                        "rowQuestion": {
+                            "title": "Sharing my experience and expertise"
+                        }
+                    },
+                    {
+                        "questionId": "0e66185f",
+                        "rowQuestion": {
+                            "title": "Advancing my career"
+                        }
+                    },
+                    {
+                        "questionId": "48a07311",
+                        "rowQuestion": {
+                            "title": "Becoming part of a community"
+                        }
+                    },
+                    {
+                        "questionId": "5f5499a6",
+                        "rowQuestion": {
+                            "title": "Getting immediate feedback"
+                        }
+                    },
+                    {
+                        "questionId": "5706de3a",
+                        "rowQuestion": {
+                            "title": "Joining friends that participate"
+                        }
+                    },
+                    {
+                        "questionId": "2f57673e",
+                        "rowQuestion": {
+                            "title": "[HACKATHON_THEME]"
+                        }
+                    },
+                    {
+                        "questionId": "5d25776c",
+                        "rowQuestion": {
+                            "title": "Getting through personal problems"
+                        }
+                    },
+                    {
+                        "questionId": "35b53cfa",
+                        "rowQuestion": {
+                            "title": "Feeling needed"
+                        }
+                    },
+                    {
+                        "questionId": "300ce362",
+                        "rowQuestion": {
+                            "title": "Win a prize"
+                        }
+                    }
+                ],
+                "grid": {
+                    "columns": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Not at all"
+                            },
+                            {
+                                "value": "To some extent"
+                            },
+                            {
+                                "value": "To a moderate extent"
+                            },
+                            {
+                                "value": "To a large extent"
+                            },
+                            {
+                                "value": "Completely"
+                            }
+                        ]
+                    }
+                }
+            },
+            "title": "To what extent was your decision to participate in this hackathon motivated by..."
+        },
+        {
+            "itemId": "6fba0bf9",
+            "title": "If your participation is motivated by other than the above reasons, please describe additional motivations below.",
+            "questionItem": {
+                "question": {
+                    "questionId": "56417d00",
+                    "textQuestion": {}
+                }
+            }
+        },
+        {
+            "itemId": "2b0b7d72",
+            "pageBreakItem": {},
+            "title": "Teamwork during this hackathon",
+            "description": "The following questions are related to your perception of the team you were a part of during this hackathon."
+        },
+        {
+            "itemId": "22a02ec5",
+            "title": "What was the name of your team / project?",
+            "questionItem": {
+                "question": {
+                    "questionId": "5a4774f4",
+                    "required": true,
+                    "textQuestion": {}
+                }
+            }
+        },
+        {
+            "itemId": "371cbb99",
+            "title": "How many people were in your team (including yourself)?",
+            "questionItem": {
+                "question": {
+                    "questionId": "7bba3f05",
+                    "textQuestion": {}
+                }
+            }
+        },
+        {
+            "itemId": "7ed38923",
+            "title": "Did your team use a code repository? If yes, please provide the URL of that repository below.",
+            "questionItem": {
+                "question": {
+                    "questionId": "74191a11",
+                    "textQuestion": {}
+                }
+            }
+        },
+        {
+            "itemId": "4755487f",
+            "title": "Did your team use any other online resources to e.g. create documentation? If yes, please provide the URL of that resource below.",
+            "questionItem": {
+                "question": {
+                    "questionId": "68f41f8c",
+                    "textQuestion": {
+                        "paragraph": true
+                    }
+                }
+            }
+        },
+        {
+            "itemId": "4e0fdca7",
+            "title": "Was there a team leader?",
+            "description": "A team leader is someone who provides guidance, instruction, direction and leadership to the team.",
+            "questionItem": {
+                "question": {
+                    "questionId": "389bc010",
+                    "choiceQuestion": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Yes, I was the team leader."
+                            },
+                            {
+                                "value": "Yes, someone else was the team leader."
+                            },
+                            {
+                                "value": "No, there was no clear leader in the team."
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "itemId": "7fd35832",
+            "title": "Was there a project manager?",
+            "description": "A project manager is someone who keeps track the team's progress and coordinates the actions of team members.",
+            "questionItem": {
+                "question": {
+                    "questionId": "3ce43537",
+                    "choiceQuestion": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Yes, I was the project manager."
+                            },
+                            {
+                                "value": "Yes, someone else was the project manager."
+                            },
+                            {
+                                "value": "No, there was no clear project manager in the team."
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "itemId": "0fe1fd0e",
+            "title": "Was there a social-emotional leader?",
+            "description": "A social-emotional leader is someone who alleviates the frustration, disappointments and hostilities which arise in the team.",
+            "questionItem": {
+                "question": {
+                    "questionId": "53625334",
+                    "choiceQuestion": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Yes, I was the social-emotional leader."
+                            },
+                            {
+                                "value": "Yes, someone else was the social-emotional leader."
+                            },
+                            {
+                                "value": "No, there was no clear social-emotional in the team."
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "itemId": "59570665",
+            "questionGroupItem": {
+                "questions": [
+                    {
+                        "questionId": "241b057e",
+                        "rowQuestion": {
+                            "title": "I knew my team members well."
+                        }
+                    },
+                    {
+                        "questionId": "11205b52",
+                        "rowQuestion": {
+                            "title": "I have collaborated with some of my team members before."
+                        }
+                    },
+                    {
+                        "questionId": "037c0376",
+                        "rowQuestion": {
+                            "title": "I have been close to some of my team members before."
+                        }
+                    },
+                    {
+                        "questionId": "39e857de",
+                        "rowQuestion": {
+                            "title": "I have socialized with some of my team members (outside of this hackathon) before."
+                        }
+                    }
+                ],
+                "grid": {
+                    "columns": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Strongly disagree"
+                            },
+                            {
+                                "value": "Somewhat disagree"
+                            },
+                            {
+                                "value": "Neither agree nor disagree"
+                            },
+                            {
+                                "value": "Somewhat agree"
+                            },
+                            {
+                                "value": "Strongly agree"
+                            }
+                        ]
+                    }
+                }
+            },
+            "title": "How well did you know your team members?"
+        },
+        {
+            "itemId": "041d4253",
+            "pageBreakItem": {},
+            "title": "Teamwork during this hackathon continued...",
+            "description": "The following questions are related to your perception of the team you were a part of during this hackathon."
+        },
+        {
+            "itemId": "7b233227",
+            "questionGroupItem": {
+                "questions": [
+                    {
+                        "questionId": "2224240b",
+                        "rowQuestion": {
+                            "title": "(1) Inefficient to (5) Efficient"
+                        }
+                    },
+                    {
+                        "questionId": "1bea2b9b",
+                        "rowQuestion": {
+                            "title": "(1) Uncoordinated to (5) Coordinated"
+                        }
+                    },
+                    {
+                        "questionId": "17d3539a",
+                        "rowQuestion": {
+                            "title": "(1) Unfair to (5) Fair"
+                        }
+                    },
+                    {
+                        "questionId": "4c405ef0",
+                        "rowQuestion": {
+                            "title": "(1) Confusing to (5) Easy to understand"
+                        }
+                    }
+                ],
+                "grid": {
+                    "columns": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "1"
+                            },
+                            {
+                                "value": "2"
+                            },
+                            {
+                                "value": "3"
+                            },
+                            {
+                                "value": "4"
+                            },
+                            {
+                                "value": "5"
+                            }
+                        ]
+                    }
+                }
+            },
+            "title": "Would you describe your team process as more..."
+        },
+        {
+            "itemId": "2deedc16",
+            "questionGroupItem": {
+                "questions": [
+                    {
+                        "questionId": "7257f501",
+                        "rowQuestion": {
+                            "title": "I was uncertain of my duties and responsibilities in this team."
+                        }
+                    },
+                    {
+                        "questionId": "223fc503",
+                        "rowQuestion": {
+                            "title": "I was unclear about the goals and objectives for my work in this team."
+                        }
+                    },
+                    {
+                        "questionId": "4fb1d914",
+                        "rowQuestion": {
+                            "title": "I was unsure how my work relates to the overall objectives of my team."
+                        }
+                    }
+                ],
+                "grid": {
+                    "columns": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Strongly disagree"
+                            },
+                            {
+                                "value": "Somewhat disagree"
+                            },
+                            {
+                                "value": "Neither agree nor disagree"
+                            },
+                            {
+                                "value": "Somewhat agree"
+                            },
+                            {
+                                "value": "Strongly agree"
+                            }
+                        ]
+                    }
+                }
+            },
+            "title": "Please indicate your level of agreement with the following statements related to your GOALS as a team."
+        },
+        {
+            "itemId": "242077f1",
+            "questionGroupItem": {
+                "questions": [
+                    {
+                        "questionId": "1719ef01",
+                        "rowQuestion": {
+                            "title": "Everyone had a chance to express his/her opinion."
+                        }
+                    },
+                    {
+                        "questionId": "64785e60",
+                        "rowQuestion": {
+                            "title": "The team members responded to the comments made by others."
+                        }
+                    },
+                    {
+                        "questionId": "67c4468d",
+                        "rowQuestion": {
+                            "title": "The team members participated very actively during our collaboration."
+                        }
+                    },
+                    {
+                        "questionId": "31ac13a9",
+                        "rowQuestion": {
+                            "title": "Overall, the participation of each member in the team was effective."
+                        }
+                    }
+                ],
+                "grid": {
+                    "columns": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Strongly disagree"
+                            },
+                            {
+                                "value": "Somewhat disagree"
+                            },
+                            {
+                                "value": "Neither agree nor disagree"
+                            },
+                            {
+                                "value": "Somewhat agree"
+                            },
+                            {
+                                "value": "Strongly agree"
+                            }
+                        ]
+                    }
+                }
+            },
+            "title": "Please indicate your level of agreement with the following statements about your TEAM."
+        },
+        {
+            "itemId": "0f0c7604",
+            "pageBreakItem": {},
+            "title": "Your hackathon project",
+            "description": "The following questions are related to your perception of the project you worked on during this hackathon."
+        },
+        {
+            "itemId": "6b776e7f",
+            "questionGroupItem": {
+                "questions": [
+                    {
+                        "questionId": "039227fc",
+                        "rowQuestion": {
+                            "title": "I am satisfied with the work completed in my project.."
+                        }
+                    },
+                    {
+                        "questionId": "7608478f",
+                        "rowQuestion": {
+                            "title": "I am satisfied with the quality of my team's output."
+                        }
+                    },
+                    {
+                        "questionId": "00381a71",
+                        "rowQuestion": {
+                            "title": "My ideal outcome coming into my team was achieved."
+                        }
+                    },
+                    {
+                        "questionId": "42d79d9e",
+                        "rowQuestion": {
+                            "title": "My expectations towards my team were met."
+                        }
+                    }
+                ],
+                "grid": {
+                    "columns": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Strongly disagree"
+                            },
+                            {
+                                "value": "Somewhat disagree"
+                            },
+                            {
+                                "value": "Neither agree nor disagree"
+                            },
+                            {
+                                "value": "Somewhat agree"
+                            },
+                            {
+                                "value": "Strongly agree"
+                            }
+                        ]
+                    }
+                }
+            },
+            "title": "Please indicate your level of agreement with the following statements related to your SATISFACTION with your project."
+        },
+        {
+            "itemId": "199e254c",
+            "questionGroupItem": {
+                "questions": [
+                    {
+                        "questionId": "172821a5",
+                        "rowQuestion": {
+                            "title": "My project improves my performance during my everyday work."
+                        }
+                    },
+                    {
+                        "questionId": "1d25ee55",
+                        "rowQuestion": {
+                            "title": "My project improves my productivity during my everyday work."
+                        }
+                    },
+                    {
+                        "questionId": "36f6933d",
+                        "rowQuestion": {
+                            "title": "My project improves my effectiveness during my everyday work."
+                        }
+                    },
+                    {
+                        "questionId": "0fcd4348",
+                        "rowQuestion": {
+                            "title": "Overall, my project will be useful during my everyday work."
+                        }
+                    }
+                ],
+                "grid": {
+                    "columns": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Strongly disagree"
+                            },
+                            {
+                                "value": "Somewhat disagree"
+                            },
+                            {
+                                "value": "Neither agree nor disagree"
+                            },
+                            {
+                                "value": "Somewhat agree"
+                            },
+                            {
+                                "value": "Strongly agree"
+                            }
+                        ]
+                    }
+                }
+            },
+            "title": "Please indicate your level of agreement with the following statements related to the USEFULNESS of your project."
+        },
+        {
+            "itemId": "77418ba4",
+            "questionGroupItem": {
+                "questions": [
+                    {
+                        "questionId": "64516ba6",
+                        "rowQuestion": {
+                            "title": "I intend to continue working on my hackathon project rather than not continue working on it."
+                        }
+                    },
+                    {
+                        "questionId": "668907db",
+                        "rowQuestion": {
+                            "title": "My intentions are to continue working on my hackathon project rather than any other project."
+                        }
+                    },
+                    {
+                        "questionId": "7e4c4f52",
+                        "rowQuestion": {
+                            "title": "If I could, I would like to continue working on my hackathon project as much as possible."
+                        }
+                    }
+                ],
+                "grid": {
+                    "columns": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Strongly disagree"
+                            },
+                            {
+                                "value": "Somewhat disagree"
+                            },
+                            {
+                                "value": "Neither agree nor disagree"
+                            },
+                            {
+                                "value": "Somewhat agree"
+                            },
+                            {
+                                "value": "Strongly agree"
+                            },
+                            {
+                                "value": "Not applicable"
+                            }
+                        ]
+                    }
+                }
+            },
+            "title": "Please indicate your FUTURE INTENTIONS related to your hackathon project."
+        },
+        {
+            "itemId": "3fe2e620",
+            "questionGroupItem": {
+                "questions": [
+                    {
+                        "questionId": "24e62529",
+                        "rowQuestion": {
+                            "title": "I would be able to continue working on my hackathon project."
+                        }
+                    },
+                    {
+                        "questionId": "0892e127",
+                        "rowQuestion": {
+                            "title": "Continuing to work on my hackathon project is entirely under my control."
+                        }
+                    },
+                    {
+                        "questionId": "4ce13cc0",
+                        "rowQuestion": {
+                            "title": "I have the resources, knowledge, and ability to continue working on my project after the hackathon."
+                        }
+                    }
+                ],
+                "grid": {
+                    "columns": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Strongly disagree"
+                            },
+                            {
+                                "value": "Somewhat disagree"
+                            },
+                            {
+                                "value": "Neither agree nor disagree"
+                            },
+                            {
+                                "value": "Somewhat agree"
+                            },
+                            {
+                                "value": "Strongly agree"
+                            },
+                            {
+                                "value": "Not applicable"
+                            }
+                        ]
+                    }
+                }
+            },
+            "title": "Please indicate your level of agreement with the following statements related to your ABILITY to continue working on your hackathon project."
+        },
+        {
+            "itemId": "7d4e5d4d",
+            "pageBreakItem": {},
+            "title": "Mentoring during the hackathon",
+            "description": "The following questions are related to your perception of the mentoring support you received during this hackathon."
+        },
+        {
+            "itemId": "06c018e1",
+            "questionGroupItem": {
+                "questions": [
+                    {
+                        "questionId": "5a96dd44",
+                        "rowQuestion": {
+                            "title": "The mentors supported us to scope our project."
+                        }
+                    },
+                    {
+                        "questionId": "4e392d24",
+                        "rowQuestion": {
+                            "title": "The mentors took decisions about the direction of our project."
+                        }
+                    },
+                    {
+                        "questionId": "5e826593",
+                        "rowQuestion": {
+                            "title": "The mentors provided us with solutions to technical problems we encountered."
+                        }
+                    },
+                    {
+                        "questionId": "621b4be4",
+                        "rowQuestion": {
+                            "title": "The mentors helped us to find our own solutions to technical problems we encountered."
+                        }
+                    },
+                    {
+                        "questionId": "67c944b5",
+                        "rowQuestion": {
+                            "title": "The mentor were mainly focused on our learning progress."
+                        }
+                    },
+                    {
+                        "questionId": "3b8d727c",
+                        "rowQuestion": {
+                            "title": "The mentors were mainly focused on our project progress."
+                        }
+                    },
+                    {
+                        "questionId": "70d78458",
+                        "rowQuestion": {
+                            "title": "The mentors were part of our team."
+                        }
+                    },
+                    {
+                        "questionId": "136266a6",
+                        "rowQuestion": {
+                            "title": "The mentors showed interest in us beyond the project we were working on."
+                        }
+                    },
+                    {
+                        "questionId": "1cfbc553",
+                        "rowQuestion": {
+                            "title": "We could reach the mentors when we needed help."
+                        }
+                    }
+                ],
+                "grid": {
+                    "columns": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Strongly disagree"
+                            },
+                            {
+                                "value": "Somewhat disagree"
+                            },
+                            {
+                                "value": "Neither agree nor disagree"
+                            },
+                            {
+                                "value": "Somewhat agree"
+                            },
+                            {
+                                "value": "Strongly agree"
+                            }
+                        ]
+                    }
+                }
+            },
+            "title": "To what extent do you agree with the following statements about THE SUPPORT THE MENTORS PROVIDED during this hackathon?"
+        },
+        {
+            "itemId": "2f306c40",
+            "title": "What could the MENTORS have done to improve your experience during the hackathon?",
+            "questionItem": {
+                "question": {
+                    "questionId": "6f16fcb8",
+                    "textQuestion": {
+                        "paragraph": true
+                    }
+                }
+            }
+        },
+        {
+            "itemId": "4cbe3a0b",
+            "pageBreakItem": {},
+            "title": "Hackathon experience",
+            "description": "The following questions are related to your perception of this hackathon."
+        },
+        {
+            "itemId": "25a7ab47",
+            "questionGroupItem": {
+                "questions": [
+                    {
+                        "questionId": "77be407c",
+                        "rowQuestion": {
+                            "title": "(1) Very dissatisfied to (5) Very satisfied"
+                        }
+                    },
+                    {
+                        "questionId": "71c18604",
+                        "rowQuestion": {
+                            "title": "(1) Very displeased to (5) Very pleased"
+                        }
+                    },
+                    {
+                        "questionId": "600f006d",
+                        "rowQuestion": {
+                            "title": "(1) Very frustrated to (5) Very contented"
+                        }
+                    },
+                    {
+                        "questionId": "5d562cb7",
+                        "rowQuestion": {
+                            "title": "(1) Absolutely terrible to (5) Absolutely delighted"
+                        }
+                    }
+                ],
+                "grid": {
+                    "columns": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "1"
+                            },
+                            {
+                                "value": "2"
+                            },
+                            {
+                                "value": "3"
+                            },
+                            {
+                                "value": "4"
+                            },
+                            {
+                                "value": "5"
+                            }
+                        ]
+                    }
+                }
+            },
+            "title": "How do you feel about your OVERALL EXPERIENCE participating in this hackathon?"
+        },
+        {
+            "itemId": "72bfce5a",
+            "title": "Do you plan to participate in a similar event in the future?",
+            "questionItem": {
+                "question": {
+                    "questionId": "026629ac",
+                    "choiceQuestion": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Definitely not"
+                            },
+                            {
+                                "value": "Probably not"
+                            },
+                            {
+                                "value": "Might of might not"
+                            },
+                            {
+                                "value": "Probably yes"
+                            },
+                            {
+                                "value": "Definitely yes"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "itemId": "4ff95efb",
+            "title": "How likely would you recommend a similar hackathon to a friend or colleague?",
+            "questionItem": {
+                "question": {
+                    "questionId": "67e58fba",
+                    "scaleQuestion": {
+                        "high": 10,
+                        "lowLabel": "Wouldn\u2019t recommend",
+                        "highLabel": "Highly recommend"
+                    }
+                }
+            }
+        },
+        {
+            "itemId": "344f0aba",
+            "questionGroupItem": {
+                "questions": [
+                    {
+                        "questionId": "7d7a42a1",
+                        "rowQuestion": {
+                            "title": "Pre-event webinar"
+                        }
+                    },
+                    {
+                        "questionId": "07e1f25b",
+                        "rowQuestion": {
+                            "title": "Checkpoints"
+                        }
+                    },
+                    {
+                        "questionId": "20e9e75d",
+                        "rowQuestion": {
+                            "title": "Mentoring sessions"
+                        }
+                    }
+                ],
+                "grid": {
+                    "columns": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Not at all"
+                            },
+                            {
+                                "value": "To some extent"
+                            },
+                            {
+                                "value": "To a moderate extent"
+                            },
+                            {
+                                "value": "To a large extent"
+                            },
+                            {
+                                "value": "Completely"
+                            }
+                        ]
+                    }
+                }
+            },
+            "title": "How SATISFIED are you with the following aspects of the hackathon?"
+        },
+        {
+            "itemId": "3110c520",
+            "questionGroupItem": {
+                "questions": [
+                    {
+                        "questionId": "02fbae2c",
+                        "rowQuestion": {
+                            "title": "Pre-event webinar"
+                        }
+                    },
+                    {
+                        "questionId": "705c5986",
+                        "rowQuestion": {
+                            "title": "Checkpoints"
+                        }
+                    },
+                    {
+                        "questionId": "4115a466",
+                        "rowQuestion": {
+                            "title": "Mentoring sessions"
+                        }
+                    }
+                ],
+                "grid": {
+                    "columns": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Not useful"
+                            },
+                            {
+                                "value": "Slightly useful"
+                            },
+                            {
+                                "value": "Moderately useful"
+                            },
+                            {
+                                "value": "Useful"
+                            },
+                            {
+                                "value": "Very useful"
+                            }
+                        ]
+                    }
+                }
+            },
+            "title": "Please rate how USEFUL you found the following sessions."
+        },
+        {
+            "itemId": "059f9ccd",
+            "questionGroupItem": {
+                "questions": [
+                    {
+                        "questionId": "3c5ed1ac",
+                        "rowQuestion": {
+                            "title": "Pre-event webinar"
+                        }
+                    },
+                    {
+                        "questionId": "77503a9c",
+                        "rowQuestion": {
+                            "title": "Checkpoints"
+                        }
+                    },
+                    {
+                        "questionId": "579efa38",
+                        "rowQuestion": {
+                            "title": "Mentoring sessions"
+                        }
+                    }
+                ],
+                "grid": {
+                    "columns": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Not enjoyable"
+                            },
+                            {
+                                "value": "Slightly enjoyable"
+                            },
+                            {
+                                "value": "Moderately enjoyable"
+                            },
+                            {
+                                "value": "Enjoyable"
+                            },
+                            {
+                                "value": "Very enjoyable"
+                            }
+                        ]
+                    }
+                }
+            },
+            "title": "Please rate how ENJOYABLE you found the following sessions."
+        },
+        {
+            "itemId": "2c3bf925",
+            "title": "What did you like about this hackathon?",
+            "questionItem": {
+                "question": {
+                    "questionId": "7faebdfb",
+                    "textQuestion": {
+                        "paragraph": true
+                    }
+                }
+            }
+        },
+        {
+            "itemId": "225c09bd",
+            "title": "What would you wish to be different about this hackathon?",
+            "questionItem": {
+                "question": {
+                    "questionId": "32d26d62",
+                    "textQuestion": {
+                        "paragraph": true
+                    }
+                }
+            }
+        },
+        {
+            "itemId": "055f382c",
+            "pageBreakItem": {},
+            "title": "Relationship to [COMMUNITY_THAT_ORGANIZED_THE_EVENT]",
+            "description": "The following questions are related to your perception of [COMMUNITY_THAT_ORGANIZED_THE_EVENT]."
+        },
+        {
+            "itemId": "30c80fff",
+            "questionGroupItem": {
+                "questions": [
+                    {
+                        "questionId": "2d5ba5ae",
+                        "rowQuestion": {
+                            "title": "I identify with other members of this community."
+                        }
+                    },
+                    {
+                        "questionId": "747da71d",
+                        "rowQuestion": {
+                            "title": "I am like other members of this community."
+                        }
+                    },
+                    {
+                        "questionId": "29e240a9",
+                        "rowQuestion": {
+                            "title": "This community is an important reflection of who I am."
+                        }
+                    },
+                    {
+                        "questionId": "68244ae8",
+                        "rowQuestion": {
+                            "title": "I would like to continue working with this community."
+                        }
+                    },
+                    {
+                        "questionId": "11865f4d",
+                        "rowQuestion": {
+                            "title": "I dislike being a member of this community."
+                        }
+                    },
+                    {
+                        "questionId": "38fc9e46",
+                        "rowQuestion": {
+                            "title": "I would rather belong to another community."
+                        }
+                    }
+                ],
+                "grid": {
+                    "columns": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Strongly disagree"
+                            },
+                            {
+                                "value": "Somewhat disagree"
+                            },
+                            {
+                                "value": "Neither agree nor disagree"
+                            },
+                            {
+                                "value": "Somewhat agree"
+                            },
+                            {
+                                "value": "Strongly agree"
+                            }
+                        ]
+                    }
+                }
+            },
+            "title": "Do people identify with [COMMUNITY_THAT_ORGANIZED_THE_EVENT]?"
+        },
+        {
+            "itemId": "562dfa25",
+            "questionGroupItem": {
+                "questions": [
+                    {
+                        "questionId": "3f909617",
+                        "rowQuestion": {
+                            "title": "I feel I am part of this community."
+                        }
+                    },
+                    {
+                        "questionId": "6a00757a",
+                        "rowQuestion": {
+                            "title": "I am interested in what goes on in this community."
+                        }
+                    },
+                    {
+                        "questionId": "1a20984d",
+                        "rowQuestion": {
+                            "title": "Interacting with other members of this community makes me want to try new things."
+                        }
+                    },
+                    {
+                        "questionId": "3c379397",
+                        "rowQuestion": {
+                            "title": "I am willing to spend time to support general activities in this community."
+                        }
+                    },
+                    {
+                        "questionId": "7f86dfb2",
+                        "rowQuestion": {
+                            "title": "Through this community I come into contact with new people all the time."
+                        }
+                    },
+                    {
+                        "questionId": "28c60cd6",
+                        "rowQuestion": {
+                            "title": "There are several people in this community that I trust to help me solve my problems."
+                        }
+                    },
+                    {
+                        "questionId": "21c76cec",
+                        "rowQuestion": {
+                            "title": "I know someone in this community that I can turn to if I urgently need help."
+                        }
+                    },
+                    {
+                        "questionId": "761030fd",
+                        "rowQuestion": {
+                            "title": "There is someone in this community that I can turn to for advice about making important decision."
+                        }
+                    },
+                    {
+                        "questionId": "3f3408d1",
+                        "rowQuestion": {
+                            "title": "The other members of this community would be good job references for me."
+                        }
+                    },
+                    {
+                        "questionId": "65207a57",
+                        "rowQuestion": {
+                            "title": "I do not know people in this community well enough to get them to do anything important."
+                        }
+                    }
+                ],
+                "grid": {
+                    "columns": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Strongly disagree"
+                            },
+                            {
+                                "value": "Somewhat disagree"
+                            },
+                            {
+                                "value": "Neither agree nor disagree"
+                            },
+                            {
+                                "value": "Somewhat agree"
+                            },
+                            {
+                                "value": "Strongly agree"
+                            }
+                        ]
+                    }
+                }
+            },
+            "title": "To what extent do you agree with the following statements about your relationship with [COMMUNITY_THAT_ORGANIZED_THE_EVENT]?"
+        },
+        {
+            "itemId": "18bf8b33",
+            "pageBreakItem": {},
+            "title": "Individual programming experience",
+            "description": "The following questions are related to your perception about your personal programming experience."
+        },
+        {
+            "itemId": "5c3d8f5f",
+            "title": "How many years of programming experience do you have?",
+            "description": "If you cannot recall the exact number please provide a rough estimate.",
+            "questionItem": {
+                "question": {
+                    "questionId": "332ebf19",
+                    "textQuestion": {}
+                }
+            }
+        },
+        {
+            "itemId": "5285f4cc",
+            "title": "Referring back to the people you collaborated with at this hackathon, how do you estimate your programming experience compared to them?",
+            "questionItem": {
+                "question": {
+                    "questionId": "1db6b193",
+                    "choiceQuestion": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Very inexperienced"
+                            },
+                            {
+                                "value": "Inexperienced"
+                            },
+                            {
+                                "value": "Comparable"
+                            },
+                            {
+                                "value": "Experienced"
+                            },
+                            {
+                                "value": "Very experienced"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "itemId": "59876868",
+            "questionGroupItem": {
+                "questions": [
+                    {
+                        "questionId": "6726c913",
+                        "rowQuestion": {
+                            "title": "I am able to write some parts of programs in JAVA."
+                        }
+                    },
+                    {
+                        "questionId": "22cc0f38",
+                        "rowQuestion": {
+                            "title": "I am able to write some parts of programs in JAVASCRIPT."
+                        }
+                    },
+                    {
+                        "questionId": "33d310ec",
+                        "rowQuestion": {
+                            "title": "I am able to write some parts of programs in PYTHON."
+                        }
+                    },
+                    {
+                        "questionId": "56eae58f",
+                        "rowQuestion": {
+                            "title": "I am able to write some parts of programs in HTML/HTML5."
+                        }
+                    },
+                    {
+                        "questionId": "61cb8709",
+                        "rowQuestion": {
+                            "title": "I am able to write some parts of programs in DJANGO/AIRAVATA."
+                        }
+                    },
+                    {
+                        "questionId": "05731864",
+                        "rowQuestion": {
+                            "title": "I can make some use of REQUESTS, JSON and XML."
+                        }
+                    },
+                    {
+                        "questionId": "373443a6",
+                        "rowQuestion": {
+                            "title": "I can make some use of JUPYTER NOTEBOOKS."
+                        }
+                    }
+                ],
+                "grid": {
+                    "columns": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Strongly disagree"
+                            },
+                            {
+                                "value": "Somewhat disagree"
+                            },
+                            {
+                                "value": "Neither agree nor disagree"
+                            },
+                            {
+                                "value": "Somewhat agree"
+                            },
+                            {
+                                "value": "Strongly agree"
+                            }
+                        ]
+                    }
+                }
+            },
+            "title": "To what extend do you agree with the following statements about your ABILITY to use these technologies?"
+        },
+        {
+            "itemId": "3a6a5e0f",
+            "questionGroupItem": {
+                "questions": [
+                    {
+                        "questionId": "08c2870b",
+                        "rowQuestion": {
+                            "title": "I am comfortable to write programs in JAVA."
+                        }
+                    },
+                    {
+                        "questionId": "32c10300",
+                        "rowQuestion": {
+                            "title": "I am comfortable to write programs in JAVASCRIPT."
+                        }
+                    },
+                    {
+                        "questionId": "738cc792",
+                        "rowQuestion": {
+                            "title": "I am comfortable to write programs in PYTHON."
+                        }
+                    },
+                    {
+                        "questionId": "7b25ab73",
+                        "rowQuestion": {
+                            "title": "I am comfortable to write programs in HTML/HTML5."
+                        }
+                    },
+                    {
+                        "questionId": "3b1c2766",
+                        "rowQuestion": {
+                            "title": "I am comfortable to write programs in DJANGO/AIRAVATA."
+                        }
+                    },
+                    {
+                        "questionId": "4811080f",
+                        "rowQuestion": {
+                            "title": "I am comfortable to use REQUESTS, JSON and XML."
+                        }
+                    },
+                    {
+                        "questionId": "18df04d7",
+                        "rowQuestion": {
+                            "title": "I am comfortable to use JUPYTER NOTEBOOKS."
+                        }
+                    }
+                ],
+                "grid": {
+                    "columns": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Strongly disagree"
+                            },
+                            {
+                                "value": "Somewhat disagree"
+                            },
+                            {
+                                "value": "Neither agree nor disagree"
+                            },
+                            {
+                                "value": "Somewhat agree"
+                            },
+                            {
+                                "value": "Strongly agree"
+                            }
+                        ]
+                    }
+                }
+            },
+            "title": "To what extend do you agree with the following statements about your LEVEL OF COMFORT using these technologies?"
+        },
+        {
+            "itemId": "06369bad",
+            "title": "If you have any expertise using technologies other than the ones mentioned before, please name them here.",
+            "questionItem": {
+                "question": {
+                    "questionId": "5e392d80",
+                    "textQuestion": {}
+                }
+            }
+        },
+        {
+            "itemId": "27438f46",
+            "pageBreakItem": {},
+            "title": "Demographics and individual background",
+            "description": "The following questions are about your personal demographic characteristics."
+        },
+        {
+            "itemId": "021f3522",
+            "title": "How old are you currently?",
+            "questionItem": {
+                "question": {
+                    "questionId": "5d3aa146",
+                    "choiceQuestion": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "18 to 24"
+                            },
+                            {
+                                "value": "25 to 34"
+                            },
+                            {
+                                "value": "35 to 44"
+                            },
+                            {
+                                "value": "45 to 54"
+                            },
+                            {
+                                "value": "55 to 64"
+                            },
+                            {
+                                "value": "65 to 74"
+                            },
+                            {
+                                "value": "75 or older"
+                            },
+                            {
+                                "value": "Prefer not to say"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "itemId": "1e078e8f",
+            "title": "Are you...?",
+            "questionItem": {
+                "question": {
+                    "questionId": "2a7b3c48",
+                    "choiceQuestion": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Female"
+                            },
+                            {
+                                "value": "Male"
+                            },
+                            {
+                                "value": "Non-binary"
+                            },
+                            {
+                                "value": "Prefer not to say"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "itemId": "1ac941d3",
+            "title": "What is highest level of formal education that you have completed until now?",
+            "questionItem": {
+                "question": {
+                    "questionId": "0cb0e256",
+                    "choiceQuestion": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "High school diploma or GED"
+                            },
+                            {
+                                "value": "Some college"
+                            },
+                            {
+                                "value": "Associate and/or bachelor's degree"
+                            },
+                            {
+                                "value": "Bachelor's degree"
+                            },
+                            {
+                                "value": "Professional degree"
+                            },
+                            {
+                                "value": "Master's degree"
+                            },
+                            {
+                                "value": "Doctorate"
+                            },
+                            {
+                                "value": "Prefer not to say"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "itemId": "6ad32206",
+            "title": "Do you consider yourself a minority? (For example in terms of race, gender, expertise or in another way)",
+            "questionItem": {
+                "question": {
+                    "questionId": "66be5783",
+                    "choiceQuestion": {
+                        "type": "RADIO",
+                        "options": [
+                            {
+                                "value": "Yes"
+                            },
+                            {
+                                "value": "No"
+                            },
+                            {
+                                "value": "Prefer not to say"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}
