@@ -1,13 +1,13 @@
 <div class="container-object">
     <div class="number-wrapper">
         <h1 class="scoreNumber">
-            {{scoreNumber}}
+            {{bestPossibleNumber ? '' : '~'}}{{scoreNumber}}
         </h1>
         <span class="comparisonNumber">
-            /{{bestPossibleNumber}}
+            {{bestPossibleNumber ? '/' + bestPossibleNumber : ''}}
         </span>
     </div>
     <h6>
-        {{scoreText}}
+        {{captionText}}
     </h6>
 </div>

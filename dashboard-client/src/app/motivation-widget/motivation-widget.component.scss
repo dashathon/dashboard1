@@ -18,3 +18,27 @@
     background-color: lightgray;
     border-radius: 50%;
 }
+
+div[class^="clr-col"] {
+    height: 100%;
+}
+
+.chart-container {
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-body {
+    height: calc(100% - 50px);
+}
+
+h6 {
+    margin: 0;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+}

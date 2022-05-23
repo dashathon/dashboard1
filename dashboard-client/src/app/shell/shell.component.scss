@@ -17,3 +17,10 @@ div[class^="clr-col"] {
     height: calc(100% - 49px);
     width: 100%;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% auto;
+    height: 100%;
+    grid-gap: 1rem;
+}

@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class BasicScoreDisplayComponent implements OnInit {
 
   @Input()
-  scoreText?: string;
+  captionText?: string;
 
   @Input()
   scoreNumber?: number;

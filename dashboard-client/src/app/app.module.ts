@@ -15,6 +15,8 @@ import { BasicWidgetComponent } from './basic-widget/basic-widget.component';
 import { BasicScoreDisplayComponent } from './basic-score-display/basic-score-display.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MotivationWidgetComponent } from './motivation-widget/motivation-widget.component';
+import { OpenAnswerListComponent } from './open-answer-list/open-answer-list.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 ClarityIcons.addIcons(cogIcon, resizeIcon, infoCircleIcon);
 
@@ -24,14 +26,16 @@ ClarityIcons.addIcons(cogIcon, resizeIcon, infoCircleIcon);
     ShellComponent,
     BasicWidgetComponent,
     BasicScoreDisplayComponent,
-    MotivationWidgetComponent
+    MotivationWidgetComponent,
+    OpenAnswerListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ClarityModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
