@@ -7,11 +7,16 @@ from httplib2 import Http
 from oauth2client import client, file, tools
 from oauth2client.service_account import ServiceAccountCredentials
 from flask_cors import CORS
+import json
+
 
 # Initialization of the Backend with open CORS-Policy
 app = Flask(__name__)
 cors = CORS(app, resources={r"*": {"origins": "*"}})
 api = Api(app)
+
+file = open('dataMock.json', 'rb')
+data = json.load(file)
 
 # Needed Scopes for the Authorization of the Google-Api-Client
 SCOPES = "https://www.googleapis.com/auth/forms.body"
@@ -35,7 +40,8 @@ def setupGoogleFormsApi():
 
 class Forms(Resource):
   def get(self):
-    return {"message": "You successfully reached the server!"}
+    
+    return data
 
     # Here we should use the Google-Api to fetch the Froms-data
 
