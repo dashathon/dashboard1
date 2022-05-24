@@ -1,5 +1,5 @@
 export enum fivePointLikertScale{
-    Least = 1, 
+    Least, 
     MediumLeast,
     Medium,
     MediumMax,

@@ -1,4 +1,4 @@
-import { fivePointLikertScale } from "models/enums/FivePointLikertScale";
+import { fivePointLikertScale } from "../enums/FivePointLikertScale";
 
 export interface IndividualProgrammingExperience {
     ProgrammingExperienceYears: number;
