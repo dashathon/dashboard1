@@ -1,6 +1,6 @@
 import { role } from "../enums/Role";
 
-export interface IndividualMeasures{
+export interface TeamComposition{
     TeamId : string;
     TeamSize : number;
     CodeRepo : string;
