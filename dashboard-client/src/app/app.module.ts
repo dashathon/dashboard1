@@ -12,6 +12,7 @@ import { ClarityIcons,
           infoCircleIcon
 } from '@cds/core/icon';
 import { BasicWidgetComponent } from './basic-widget/basic-widget.component';
+import { HttpClientModule } from '@angular/common/http';
 
 ClarityIcons.addIcons(cogIcon, resizeIcon, infoCircleIcon);
 
@@ -25,7 +26,8 @@ ClarityIcons.addIcons(cogIcon, resizeIcon, infoCircleIcon);
     BrowserModule,
     AppRoutingModule,
     ClarityModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
