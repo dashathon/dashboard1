@@ -4,22 +4,22 @@ import { session } from "../enums/Session";
 
 export interface EventMeasures {
     SatisfactionWithHackathon:{
-        Satisfaction: fivePointLikertScale;
-        Pleasure: fivePointLikertScale;
-        Contended: fivePointLikertScale;
-        Delighted: fivePointLikertScale;
+        Satisfaction: fivePointLikertScale[];
+        Pleasure: fivePointLikertScale[];
+        Contended: fivePointLikertScale[];
+        Delighted: fivePointLikertScale[];
     }
 
-    FutureParticipationIntentions: fivePointLikertScale;
-    RecommendationLikelyness: number;
-    SessionSatisfaction: Sessions;
-    SessionUsefulness: Sessions;
-    SessionEnjoyment:  Sessions;
-    GoodEvent: string;
+    FutureParticipationIntentions: fivePointLikertScale[];
+    RecommendationLikelyness: number[];
+    SessionSatisfaction: Sessions[];
+    SessionUsefulness: Sessions[];
+    SessionEnjoyment:  Sessions[];
+    GoodEvent: string[];
 }
 
 interface Sessions {
-    PreEventWebinar: fivePointLikertScale;
-    Checkpoints: fivePointLikertScale;
-    MentoringSessions: fivePointLikertScale;
+    PreEventWebinar: fivePointLikertScale[];
+    Checkpoints: fivePointLikertScale[];
+    MentoringSessions: fivePointLikertScale[];
 }
