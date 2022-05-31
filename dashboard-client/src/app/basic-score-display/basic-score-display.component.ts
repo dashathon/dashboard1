@@ -11,6 +11,9 @@ export class BasicScoreDisplayComponent implements OnInit {
   captionText?: string;
 
   @Input()
+  captionTooltip?: string;
+
+  @Input()
   scoreNumber?: number;
 
   @Input()

@@ -13,6 +13,9 @@ export class OpenAnswerListComponent implements OnInit {
   @Input()
   captionText?: string;
 
+  @Input()
+  captionTooltip?: string;
+
   constructor() { }
 
   ngOnInit(): void {

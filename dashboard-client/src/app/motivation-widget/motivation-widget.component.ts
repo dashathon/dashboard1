@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { widegts } from '../widget-size';
 
 @Component({
   selector: 'app-motivation-widget',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./motivation-widget.component.scss']
 })
 export class MotivationWidgetComponent implements OnInit {
+
+  @Input()
+  distribution: any;
 
   answerList = ["More Fun", "Less Fun at Home", "Jobs", "Having a big Ding Dong"];
   barChartData = [
@@ -24,6 +28,10 @@ export class MotivationWidgetComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public get widgetSize(): typeof widegts {
+    return widegts; 
   }
 
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormService } from '../form.service';
+import { widegts } from '../widget-size';
 
 @Component({
   selector: 'app-shell',
@@ -10,6 +11,12 @@ export class ShellComponent implements OnInit {
 
   formData = {};
   formResponses = {};
+
+  distribution = {
+    first: widegts.teamProcess,
+    second: widegts.communityMeasures,
+    third: widegts.individualMeasures
+  }
 
   constructor(private formService: FormService) { }
 
@@ -26,6 +33,10 @@ export class ShellComponent implements OnInit {
     }, error => {
       console.log(error);
     });
+  }
+
+  public get widgets(): typeof widegts {
+    return widegts; 
   }
 
 }

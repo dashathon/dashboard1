@@ -1,8 +1,10 @@
-<div class=".container">
+<div class="container">
     <div class="listWrapper">
-        <span *ngFor="let answer of answerList" class="label label-purple"><div>{{answer}}</div><span class="badge badge-1">1</span></span>
+        <span *ngFor="let answer of answerList" class="label label-purple"><div title="{{answer}}">{{answer}}</div><span class="badge badge-1">1</span></span>
     </div>
-    <div>
-        <h6>{{captionText}}</h6>
-    </div>
+    <clr-tooltip><h6 class="description" clrTooltipTrigger>{{captionText}}</h6>
+        <clr-tooltip-content clrPosition="top-right" clrSize="lg" *clrIfOpen>
+            <span>{{captionTooltip}}</span>
+        </clr-tooltip-content>
+    </clr-tooltip>
 </div>

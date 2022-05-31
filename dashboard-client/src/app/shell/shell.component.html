@@ -9,12 +9,36 @@
     </header>
 
     <div class="content-container">
-        <div class="content-area">
-            <div class="grid-container">
-                <app-motivation-widget></app-motivation-widget>
-                <app-motivation-widget></app-motivation-widget>
-                <app-motivation-widget></app-motivation-widget>
-                <app-motivation-widget></app-motivation-widget>
+        <div class="content-area wrapper" style="padding: .6rem">
+            <div class="clr-row">
+                <div class="clr-col-1 button-list">
+                    <button [ngClass]="distribution.first === widgets.teamProcess ? 'btn-primary' : 'btn-primary-outline'" class="btn">Team Process</button>
+                    <button [ngClass]="distribution.first === widgets.demographics ? 'btn-primary' : 'btn-primary-outline'" class="btn">Demographics & Background</button>
+                    <button [ngClass]="distribution.first === widgets.individualProgramming ? 'btn-primary' : 'btn-primary-outline'" class="btn">Programming Experience</button>
+                </div>
+                <div class="clr-col-11">
+                    <app-motivation-widget *ngIf="distribution.first === widgets.teamProcess"></app-motivation-widget>
+                </div>
+            </div>
+            <div class="clr-row">
+                <div class="clr-col-1 button-list">
+                    <button [ngClass]="distribution.second === widgets.teamComposition ? 'btn-primary' : 'btn-primary-outline'" class="btn">Team Composition</button>
+                    <button [ngClass]="distribution.second === widgets.mentoring ? 'btn-primary' : 'btn-primary-outline'" class="btn">Mentoring</button>
+                    <button [ngClass]="distribution.second === widgets.communityMeasures ? 'btn-primary' : 'btn-primary-outline'" class="btn">Community Measures</button>
+                </div>
+                <div class="clr-col-11">
+                    <app-motivation-widget *ngIf="distribution.second === widgets.communityMeasures"></app-motivation-widget>
+                </div>
+            </div>
+            <div class="clr-row">
+                <div class="clr-col-1 button-list">
+                    <button (click)="distribution.third = widgets.individualMeasures" [ngClass]="distribution.third === widgets.individualMeasures ? 'btn-primary' : 'btn-primary-outline'" class="btn">Individual Measures</button>
+                    <button (click)="distribution.third = widgets.projectMeasures" [ngClass]="distribution.third === widgets.projectMeasures ? 'btn-primary' : 'btn-primary-outline'" class="btn">Project Measures</button>
+                    <button (click)="distribution.third = widgets.eventMeasures" [ngClass]="distribution.third === widgets.eventMeasures ? 'btn-primary' : 'btn-primary-outline'" class="btn">Event Measures</button>
+                </div>
+                <div class="clr-col-11">
+                    <app-motivation-widget *ngIf="distribution.third === widgets.individualMeasures"></app-motivation-widget>
+                </div>
             </div>
         </div>
     </div>
