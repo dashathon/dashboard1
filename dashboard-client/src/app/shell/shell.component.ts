@@ -13,7 +13,7 @@ export class ShellComponent implements OnInit {
   formResponses = {};
 
   distribution = {
-    first: widegts.teamProcess,
+    first: widegts.demographics,
     second: widegts.communityMeasures,
     third: widegts.individualMeasures
   }
