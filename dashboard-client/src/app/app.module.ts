@@ -24,7 +24,7 @@ import { ComparisonAverageSdListComponent } from './comparison-average-sd-list/c
 import { ChartMarginRemovalDirective } from './directives/chart-margin-removal.directive';
 import { DemographicsWidgetComponent } from './demographics-widget/demographics-widget.component';
 import { GenderDistributionComponent } from './demographics-widget/gender-distribution/gender-distribution.component';
-import { EventMeasuresWidgetComponent } from './event-measures-widget/event-measures-widget.component';
+import { EventMeasuresWidgetComponent } from './project-measures-widget/project-measures-widget.component';
 
 ClarityIcons.addIcons(cogIcon, resizeIcon, infoCircleIcon);
 
