@@ -1,0 +1,49 @@
+<div class="card">
+    <div class="card-header">
+        <div class="headInfo">
+            <span>Event Measures</span>
+            <cds-icon shape="info-circle"></cds-icon>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="clr-row">
+            <div class="clr-col-3">
+                <app-basic-score-display 
+                    [bestPossibleNumber]="5" 
+                    [scoreNumber]="2.5" 
+                    [sd]="0.4"
+                    [captionText]="'Satisfaction with outcome'"
+                    [captionTooltip]="'Shows the aggregated satisfaction with the project of the particular team.'">
+                </app-basic-score-display>
+            </div>
+            <div class="clr-col-3">
+                <app-basic-score-display 
+                    [bestPossibleNumber]="5" 
+                    [scoreNumber]="2.5" 
+                    [sd]="0.4"
+                    [captionText]="'Precieved usefulness'"
+                    [captionTooltip]="'Shows the aggregated precieved usefuless of the project of the particular team.'">
+                </app-basic-score-display>
+            </div>
+            <div class="clr-col-3">
+                <app-basic-score-display 
+                    [bestPossibleNumber]="5" 
+                    [scoreNumber]="2.5" 
+                    [sd]="0.4"
+                    [captionText]="'Continuation intentions'"
+                    [captionTooltip]="'Shows the aggregated future intentions in relation to the project of the particular team.'">
+                </app-basic-score-display>
+            </div>
+            <div class="clr-col-3">
+                <app-basic-score-display 
+                    [bestPossibleNumber]="5" 
+                    [scoreNumber]="2.5" 
+                    [sd]="0.4"
+                    [captionText]="'Behavioral control'"
+                    [captionTooltip]="'Shows the aggregated ability to continue to work on the project of the particular team.'"
+                    [tooltipLeft]="true">
+                </app-basic-score-display>
+            </div>
+        </div>
+    </div>
+</div>

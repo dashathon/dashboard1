@@ -17,7 +17,7 @@
         </span>
     </div>
     <clr-tooltip><h6 class="description" clrTooltipTrigger>{{captionText}}</h6>
-        <clr-tooltip-content clrPosition="top-right" clrSize="lg" *clrIfOpen>
+        <clr-tooltip-content clrPosition="{{tooltipLeft ? 'top-left' : 'top-right'}}" clrSize="lg" *clrIfOpen>
             <span>{{captionTooltip}}</span>
         </clr-tooltip-content>
     </clr-tooltip>

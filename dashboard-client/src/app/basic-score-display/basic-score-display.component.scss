@@ -18,18 +18,30 @@ h6 {
 
 .comparisonNumber {
     font-size: .8rem;
+    vertical-align: bottom;
+    display: table-cell;
 }
 
 .scoreNumber {
     font-size: 2rem;
     margin: 0;
+    vertical-align: bottom;
+    display: table-cell;
+    line-height: 40px;
 }
 
 .number-wrapper {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     flex-grow: 1;
+}
+
+.first-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: fit-content;
 }

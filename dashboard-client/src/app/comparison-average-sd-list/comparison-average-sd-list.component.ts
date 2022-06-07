@@ -16,6 +16,9 @@ export class ComparisonAverageSdListComponent implements OnInit {
   @Input()
   captionTooltip?: string;
 
+  @Input()
+  tooltipLeft?: boolean;
+
   constructor() { }
 
   ngOnInit(): void {

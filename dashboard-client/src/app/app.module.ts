@@ -24,6 +24,7 @@ import { ComparisonAverageSdListComponent } from './comparison-average-sd-list/c
 import { ChartMarginRemovalDirective } from './directives/chart-margin-removal.directive';
 import { DemographicsWidgetComponent } from './demographics-widget/demographics-widget.component';
 import { GenderDistributionComponent } from './demographics-widget/gender-distribution/gender-distribution.component';
+import { EventMeasuresWidgetComponent } from './event-measures-widget/event-measures-widget.component';
 
 ClarityIcons.addIcons(cogIcon, resizeIcon, infoCircleIcon);
 
@@ -41,7 +42,8 @@ ClarityIcons.addIcons(cogIcon, resizeIcon, infoCircleIcon);
     ComparisonAverageSdListComponent,
     ChartMarginRemovalDirective,
     DemographicsWidgetComponent,
-    GenderDistributionComponent
+    GenderDistributionComponent,
+    EventMeasuresWidgetComponent
   ],
   imports: [
     BrowserModule,

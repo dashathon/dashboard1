@@ -19,6 +19,12 @@ export class BasicScoreDisplayComponent implements OnInit {
   @Input()
   bestPossibleNumber?: number;
 
+  @Input()
+  sd?: number;
+
+  @Input()
+  tooltipLeft?: boolean;
+
   constructor() { }
 
   ngOnInit(): void {
