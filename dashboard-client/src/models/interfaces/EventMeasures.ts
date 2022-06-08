@@ -1,6 +1,4 @@
-import { Session } from "inspector";
 import { fivePointLikertScale } from "../enums/FivePointLikertScale";
-import { session } from "../enums/Session";
 
 export interface EventMeasures {
     SatisfactionWithHackathon:{
@@ -12,14 +10,14 @@ export interface EventMeasures {
 
     FutureParticipationIntentions: fivePointLikertScale[];
     RecommendationLikelyness: number[];
-    SessionSatisfaction: Sessions[];
-    SessionUsefulness: Sessions[];
-    SessionEnjoyment:  Sessions[];
+    SessionSatisfaction: Session[];
+    SessionUsefulness: Session[];
+    SessionEnjoyment:  Session[];
     GoodEvent: string[];
 }
 
-interface Sessions {
-    PreEventWebinar: fivePointLikertScale[];
-    Checkpoints: fivePointLikertScale[];
-    MentoringSessions: fivePointLikertScale[];
+export interface Session {
+    PreEventWebinar: fivePointLikertScale;
+    Checkpoints: fivePointLikertScale;
+    MentoringSessions: fivePointLikertScale;
 }
