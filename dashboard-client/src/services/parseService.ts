@@ -94,8 +94,114 @@ export class parseService {
     readonly exampleString : string = 'exampleString';
 //#endregion
     constructor() {
+        //individualMeasures
+        this.individualMeasures.Motivation['Making something cool / Working on an interesting project idea'] = [];
+        this.individualMeasures.Motivation['Learning new tools or skills (Clary, understanding)'] = [];
+        this.individualMeasures.Motivation['[HACKATHON_THEME]'] = [];
+        this.individualMeasures.Motivation['Meeting new people'] = [];
+        this.individualMeasures.Motivation['Seeing what others are working on'] = [];
+        this.individualMeasures.Motivation['Sharing my experience and expertise'] = [];
+        this.individualMeasures.Motivation['Joining friends that participate (Clary, social)'] = [];
+        this.individualMeasures.Motivation['Dedicated time to get work done'] = [];
+        this.individualMeasures.Motivation['Wind a prize'] = [];
+        this.individualMeasures.Motivation['Having fun'] = [];
+        //teamProcess
 
+        this.teamProcess.GoalClarty['I was uncertain of my duties and responsibilities in this team.'] = [];
+        this.teamProcess.GoalClarty['I was unclear about the goals and objectives for my work in this team.'] = [];
+        this.teamProcess.GoalClarty['I was unsure how my work relates to the overall objectives of my team.'] = [];
+
+        this.teamProcess.Voice['Everyone had a chance to express his/her opinion.'] = [];
+        this.teamProcess.Voice['The team members responded to the comments made by others.'] = [];
+        this.teamProcess.Voice['The team members participated very actively during the project.'] = [];
+        this.teamProcess.Voice['Overall, the participation of each member in the team was effective.'] = [];
+
+        //projectMeasures
+        this.projectMeasures.SatisfactionWithOutcome['I am satisfied with the work completed in my project.'] = [];
+        this.projectMeasures.SatisfactionWithOutcome['I am satisfied with the quality of my team\'s output.'] = [];
+        this.projectMeasures.SatisfactionWithOutcome['My ideal outcome coming into my project achieved.'] = [];
+        this.projectMeasures.SatisfactionWithOutcome['My expectations towards my team were met.'] = [];
+
+        this.projectMeasures.PerceivedUsefulness['My project improves my performance during my everyday work'] = [];
+        this.projectMeasures.PerceivedUsefulness['My project improves my productivity during my everyday work.'] = [];
+        this.projectMeasures.PerceivedUsefulness['My project improves my effectiveness during my everyday work.'] = [];
+        this.projectMeasures.PerceivedUsefulness['Overall, my project will be useful during my everyday work.'] = [];
+
+        this.projectMeasures.ContinuationIntentions['I intend to continue working on my hackathon project rather than not continue working on it.'] = [];
+        this.projectMeasures.ContinuationIntentions['My intentions are to continue working on my hackathon project rather than any other project.'] = [];
+        this.projectMeasures.ContinuationIntentions['If I could, I would like to continue working on my hackathon project as much as possible.'] = [];
+
+        this.projectMeasures.BehavioralControl['I would be able to continue working on my hackathon project.'] = [];
+        this.projectMeasures.BehavioralControl['Continuing to work on my hackathon project is entirely under my control.'] = [];
+        this.projectMeasures.BehavioralControl['I have the resources, knowledge, and ability to continue working on my project after the hackathon.'] = [];
+
+        //mentoring
+
+        this.mentoring.MentoringExperience['The mentors supported us to scope our project.'] = [];
+        this.mentoring.MentoringExperience['The mentors took decisions about the direction of our project.'] = [];
+        this.mentoring.MentoringExperience['The mentors provided us with solutions to technical problems we encountered.'] = [];
+        this.mentoring.MentoringExperience['The mentors helped us to find our own solutions to technical problems we encountered.'] = [];
+        this.mentoring.MentoringExperience['The mentor were mainly focused on our learning progress.'] = [];
+        this.mentoring.MentoringExperience['The mentors were mainly focused on our project progress.'] = [];
+        this.mentoring.MentoringExperience['The mentors were part of our team.'] = [];
+        this.mentoring.MentoringExperience['The mentors showed interest in us beyond the project we were working on.'] = [];
+        this.mentoring.MentoringExperience['We could reach the mentors when we needed help.'] = [];
+
+        //communityMeasures
+
+
+        this.communityMeasures.CommunityIdentification['I identify with other members of this community.'] = [];
+        this.communityMeasures.CommunityIdentification['I am like other members of this community.'] = [];
+        this.communityMeasures.CommunityIdentification['This community is an important reflection of who I am.'] = [];
+        this.communityMeasures.CommunityIdentification['I would like to continue working with this community.'] = [];
+        this.communityMeasures.CommunityIdentification['I dislike being a member of this community.'] = [];
+        this.communityMeasures.CommunityIdentification['I would rather belong to another community.'] = [];
+
+        this.communityMeasures.SocialCapital['I feel I am part of this community.'] = [];
+        this.communityMeasures.SocialCapital['I am interested in what goes on in this community.'] = [];
+        this.communityMeasures.SocialCapital['Interacting with other members of this community makes me want to try new things.'] = [];
+        this.communityMeasures.SocialCapital['I am willing to spend time to support general activities in this community.'] = [];
+        this.communityMeasures.SocialCapital['Through this community I come into contact with new people all the time.'] = [];
+        this.communityMeasures.SocialCapital['There are several people in this community that I trust to help me solve my problems.'] = [];
+        this.communityMeasures.SocialCapital['I know someone in this community that I can turn to if I urgently need help.'] = [];
+        this.communityMeasures.SocialCapital['There is someone in this community that I can turn to for advice about making important decision.'] = [];
+        this.communityMeasures.SocialCapital['The other members of this community would be good job references for me.'] = [];
+        this.communityMeasures.SocialCapital['I do not know people in this community well enough to get them to do anything important.'] = [];
+
+        //individualProgrammingExperience
+
+        this.individualProgrammingExperience.ProgrammingExperienceYears = [];
+        this.individualProgrammingExperience.ProgrammingExperienceComparison = [];
+
+        this.individualProgrammingExperience.ProgrammingAbility['I am able to write some parts of programs in JAVA.'] = [];
+        this.individualProgrammingExperience.ProgrammingAbility['I am able to write some parts of programs in JAVASCRIPT.'] = [];
+        this.individualProgrammingExperience.ProgrammingAbility['I am able to write some parts of programs in PYTHON.'] = [];
+        this.individualProgrammingExperience.ProgrammingAbility['I am able to write some parts of programs in HTML/HTML5.'] = [];
+        this.individualProgrammingExperience.ProgrammingAbility['I am able to write some parts of programs in DJANGO/AIRAVATA.'] = [];
+        this.individualProgrammingExperience.ProgrammingAbility['I can make some use of REQUESTS, JSON and XML.'] = [];
+        this.individualProgrammingExperience.ProgrammingAbility['I can make some use of JUPYTER NOTEBOOKS.'] = [];
+
+        this.individualProgrammingExperience.ProgrammingComfort['I am comfortable to write programs in JAVA.'] = [];
+        this.individualProgrammingExperience.ProgrammingComfort['I am comfortable to write programs in JAVASCRIPT.'] = [];
+        this.individualProgrammingExperience.ProgrammingComfort['I am comfortable to write programs in PYTHON.'] = [];
+        this.individualProgrammingExperience.ProgrammingComfort['I am comfortable to write programs in HTML/HTML5.'] = [];
+        this.individualProgrammingExperience.ProgrammingComfort['I am comfortable to write programs in DJANGO/AIRAVATA.'] = [];
+        this.individualProgrammingExperience.ProgrammingComfort['I am comfortable to use REQUESTS, JSON and XML.'] = [];
+        this.individualProgrammingExperience.ProgrammingComfort['I am comfortable to use JUPYTER NOTEBOOKS.'] = [];
      }
+
+     doSth(): void {
+        this.insertIndividualMeasures();
+        this.insertTeamProcess();
+        this.insertProjectMeasures();
+        this.insertEventMeasures();
+        this.insertTeamComposition();
+        this.insertMentoring();
+        this.insertCommunityMeasures();
+        this.insertIndividualProgrammingExperience();
+        this.insertDemographicsIndividualBackground();
+     }
+
      getRandomInt(max : number) {
         return Math.floor(Math.random() * max);
       }
@@ -213,7 +319,6 @@ export class parseService {
 
     getGender(pGender: number): number {
         switch(pGender){
-
        
         case 0: { 
             return gender.Female; 
@@ -278,7 +383,6 @@ export class parseService {
             } 
         }
     }
-
 
 
 
