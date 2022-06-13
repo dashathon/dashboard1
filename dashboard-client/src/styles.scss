@@ -1,11 +1,27 @@
 .card {
 
     margin: 0;
+    width: 100%;
     height: 100%;
 
     .card-header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        height: 30px;
+        padding: 0.2rem .5rem .2rem .5rem;
+
+        span {
+            font-size: medium;
+        }
     }
+}
+
+.card-body {
+    height: calc(100% - 30px);
+    width: 100%;
+}
+
+.card-header {
+    background-color: #f2f2f2;
 }

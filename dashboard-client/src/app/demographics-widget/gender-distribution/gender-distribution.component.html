@@ -1,0 +1,25 @@
+<div class="wrapper">
+    <div class="list-wrapper">
+        <table class="table table-compact">
+            <thead>
+                <tr>
+                    <th class="left"></th>
+                    <th class="left">Amount</th>
+                    <th class="left">Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of answerList">
+                    <td class="left"><b>{{item.title}}</b></td>
+                    <td class="left">{{item.value}}</td>
+                    <td class="left">{{item.percentage}}%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <clr-tooltip><h6 class="description" clrTooltipTrigger>{{captionText}}</h6>
+        <clr-tooltip-content clrPosition="top-left" clrSize="lg" *clrIfOpen>
+            <span>{{captionTooltip}}</span>
+        </clr-tooltip-content>
+    </clr-tooltip>
+</div>

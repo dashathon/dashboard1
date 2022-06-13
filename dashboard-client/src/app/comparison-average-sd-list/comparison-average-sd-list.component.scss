@@ -1,0 +1,66 @@
+.listWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: .2rem;
+    overflow-y: auto;
+}
+
+.index-number {
+    font-size: large;
+}
+
+.index-number-wrapper {
+    align-self: flex-start;
+    padding: .5rem;
+}
+
+.language-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 .5rem 0 .5rem;
+    flex-grow: 1;
+    overflow: hidden;
+    .title {
+        font-size:small;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+::ng-deep .score-wrapper {
+    height: fit-content;
+    padding: .2rem .4rem .2rem .4rem;
+    margin-bottom: .2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.value-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: .2rem;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: .2rem;
+}
+
+h6 {
+    margin: 0;
+    padding: .5rem 0 .5rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-self: flex-end;
+}

@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="listWrapper">
+        <span *ngFor="let language of answerList; let index = index" [ngClass]="index === 0 ? 'label-success' : index === 1 ? 'label-warning' : 'label-light-blue'" class="label score-wrapper">
+            <div class="index-number-wrapper">
+                <b class="index-number">{{index + 1}}</b>
+            </div>
+            <div class="language-wrapper">
+                <b class="title" title='{{language.title}}'>{{language.title}}</b>
+                <div *ngIf="language.value && language.sd" class="value-list">
+                    <span>Average: <b>{{language.value}}</b></span>
+                    <i>SD: <b>{{language.sd}}</b></i>
+                </div>
+            </div>
+            <div *ngIf="language.percentage" class="percentage-wrapper">
+                <b class="title">{{language.percentage}}%</b>
+            </div>
+        </span>
+    </div>
+    <clr-tooltip><h6 class="description" clrTooltipTrigger>{{captionText}}</h6>
+        <clr-tooltip-content clrPosition="{{tooltipLeft ? 'top-left' : 'top-right'}}" clrSize="lg" *clrIfOpen>
+            <span>{{captionTooltip}}</span>
+        </clr-tooltip-content>
+    </clr-tooltip>
+</div>
