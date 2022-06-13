@@ -17,7 +17,7 @@ import { IndividualProgrammingExperience } from "src/models/interfaces/Individua
 import { role } from "src/models/enums/Role";
 //#endregion 
 
-export class parseService {
+export class ResponseService {
 //#region Instances
     public individualMeasures : IndividualMeasures = {
         Motivation: {},
@@ -190,7 +190,7 @@ export class parseService {
         this.individualProgrammingExperience.ProgrammingComfort['I am comfortable to use JUPYTER NOTEBOOKS.'] = [];
      }
 
-     doSth(): void {
+     parseUser(): void {
         //jsonData.questions["9733"].text;
         this.insertIndividualMeasures();
         this.insertTeamProcess();

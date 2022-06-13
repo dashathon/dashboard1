@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" *ngIf="formData">
     <div class="card-header">
         <div class="headInfo">
             <span>Event Measures</span>
@@ -10,7 +10,7 @@
             <div class="clr-col-3">
                 <app-basic-score-display 
                     [bestPossibleNumber]="5" 
-                    [scoreNumber]="2.5" 
+                    [scoreNumber]="formData.BehavioralControl.avg" 
                     [sd]="0.4"
                     [captionText]="'Satisfaction with outcome'"
                     [captionTooltip]="'Shows the aggregated satisfaction with the project of the particular team.'">
@@ -19,7 +19,7 @@
             <div class="clr-col-3">
                 <app-basic-score-display 
                     [bestPossibleNumber]="5" 
-                    [scoreNumber]="2.5" 
+                    [scoreNumber]="formData.ContinuationIntentions.avg" 
                     [sd]="0.4"
                     [captionText]="'Precieved usefulness'"
                     [captionTooltip]="'Shows the aggregated precieved usefuless of the project of the particular team.'">
@@ -28,7 +28,7 @@
             <div class="clr-col-3">
                 <app-basic-score-display 
                     [bestPossibleNumber]="5" 
-                    [scoreNumber]="2.5" 
+                    [scoreNumber]="formData.PerceivedUsefulness.avg" 
                     [sd]="0.4"
                     [captionText]="'Continuation intentions'"
                     [captionTooltip]="'Shows the aggregated future intentions in relation to the project of the particular team.'">
@@ -37,7 +37,7 @@
             <div class="clr-col-3">
                 <app-basic-score-display 
                     [bestPossibleNumber]="5" 
-                    [scoreNumber]="2.5" 
+                    [scoreNumber]="formData.SatisfactionWithOutcome.avg" 
                     [sd]="0.4"
                     [captionText]="'Behavioral control'"
                     [captionTooltip]="'Shows the aggregated ability to continue to work on the project of the particular team.'"

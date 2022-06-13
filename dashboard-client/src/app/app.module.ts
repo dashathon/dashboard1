@@ -12,9 +12,6 @@ import { ClarityIcons,
           infoCircleIcon
 } from '@cds/core/icon';
 import { BasicWidgetComponent } from './basic-widget/basic-widget.component';
-<<<<<<< HEAD
-import { HttpClientModule } from '@angular/common/http';
-=======
 import { BasicScoreDisplayComponent } from './basic-score-display/basic-score-display.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MotivationWidgetComponent } from './motivation-widget/motivation-widget.component';
@@ -27,8 +24,8 @@ import { ComparisonAverageSdListComponent } from './comparison-average-sd-list/c
 import { ChartMarginRemovalDirective } from './directives/chart-margin-removal.directive';
 import { DemographicsWidgetComponent } from './demographics-widget/demographics-widget.component';
 import { GenderDistributionComponent } from './demographics-widget/gender-distribution/gender-distribution.component';
-import { EventMeasuresWidgetComponent } from './project-measures-widget/project-measures-widget.component';
->>>>>>> origin/Helge
+import { ProjectMeasuresWidgetComponent } from './project-measures-widget/project-measures-widget.component';
+import { ProjectMeasuresPipe } from './pipes/project-measures.pipe';
 
 ClarityIcons.addIcons(cogIcon, resizeIcon, infoCircleIcon);
 
@@ -47,19 +44,16 @@ ClarityIcons.addIcons(cogIcon, resizeIcon, infoCircleIcon);
     ChartMarginRemovalDirective,
     DemographicsWidgetComponent,
     GenderDistributionComponent,
-    EventMeasuresWidgetComponent
+    ProjectMeasuresWidgetComponent,
+    ProjectMeasuresPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ClarityModule,
     BrowserAnimationsModule,
-<<<<<<< HEAD
-    HttpClientModule
-=======
     HttpClientModule,
     NgxChartsModule
->>>>>>> origin/Helge
   ],
   providers: [],
   bootstrap: [AppComponent]

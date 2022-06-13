@@ -7,13 +7,6 @@ from flask_cors import CORS
 from flask_restful import Api, Resource
 from httplib2 import Http
 from oauth2client import client, file, tools
-<<<<<<< HEAD
-from oauth2client.service_account import ServiceAccountCredentials
-from flask_cors import CORS
-import json
-
-=======
->>>>>>> origin/Helge
 
 # Initialization of the Backend with open CORS-Policy
 app = Flask(__name__)
@@ -45,16 +38,10 @@ def setupGoogleFormsApi():
 
 class Forms(Resource):
   def get(self):
-<<<<<<< HEAD
-    
-    return data
-
-=======
     file = open('surveyData.json')
     data = json.load(file)
     return data
     
->>>>>>> origin/Helge
     # Here we should use the Google-Api to fetch the Froms-data
 
     # form_id = '1AtEnO5utgZjT-npLj-rmhd_1oQQU2lwd-SQZOPvOJPs'

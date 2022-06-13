@@ -9,20 +9,12 @@
     </header>
 
     <div class="content-container">
-<<<<<<< HEAD
-        <div class="content-area">
-            <div class="clr-row wrapper-row">
-                <div class="clr-col-3">
-                    <!-- Long component here -->
-                    <app-basic-widget [dataBasicWidget]="dataShell"></app-basic-widget>
-=======
         <div class="content-area wrapper" style="padding: .6rem">
             <div class="clr-row">
                 <div class="clr-col-1 button-list">
                     <button (click)="distribution.first = widgets.teamProcess" [ngClass]="distribution.first === widgets.teamProcess ? 'btn-primary' : 'btn-link'" class="btn">Team Process</button>
                     <button (click)="distribution.first = widgets.demographics" [ngClass]="distribution.first === widgets.demographics ? 'btn-primary' : 'btn-link'" class="btn">Demographics</button>
                     <button (click)="distribution.first = widgets.individualProgramming" [ngClass]="distribution.first === widgets.individualProgramming ? 'btn-primary' : 'btn-link'" class="btn">Programming Experience</button>
->>>>>>> origin/Helge
                 </div>
                 <div class="clr-col-11">
                     <app-programming-experience-widget *ngIf="distribution.first === widgets.individualProgramming"></app-programming-experience-widget>
@@ -47,7 +39,8 @@
                 </div>
                 <div class="clr-col-11">
                     <app-motivation-widget *ngIf="distribution.third === widgets.individualMeasures"></app-motivation-widget>
-                    <app-project-measures-widget *ngIf="distribution.third === widgets.projectMeasures"></app-project-measures-widget>
+                    <app-project-measures-widget *ngIf="distribution.third === widgets.projectMeasures" 
+                    [formData]="(responseService.projectMeasures|projectMeasuresPipe)"></app-project-measures-widget>
                 </div>
             </div>
         </div>
