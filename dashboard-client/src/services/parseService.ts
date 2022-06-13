@@ -191,6 +191,7 @@ export class parseService {
      }
 
      doSth(): void {
+        //jsonData.questions["9733"].text;
         this.insertIndividualMeasures();
         this.insertTeamProcess();
         this.insertProjectMeasures();
@@ -547,7 +548,7 @@ export class parseService {
     }
 
    insertDemographicsIndividualBackground() : void {
-    this.demographicsIndividualBackground.Age.push(this.getAge(this.getRandomInt(7)));
+    this.demographicsIndividualBackground.Age.push(this.getAge(this.getRandomInt(8)));
     this.demographicsIndividualBackground.Gender.push(this.getGender(this.getRandomInt(4)));
     this.demographicsIndividualBackground.Education.push(this.getEducation(this.getRandomInt(8)));
     this.demographicsIndividualBackground.Minority.push(this.getMinority(this.getRandomInt(3)));
