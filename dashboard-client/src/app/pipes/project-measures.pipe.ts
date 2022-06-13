@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { ControlClassService } from '@clr/angular/forms/common/providers/control-class.service';
+import { EventMeasures } from 'src/models/interfaces/EventMeasures';
 import { ProjectMeasures } from 'src/models/interfaces/ProjectMeasures';
 
 @Pipe({
@@ -14,26 +14,19 @@ export class ProjectMeasuresPipe implements PipeTransform {
     return avg
   }
 
-  transform(projectMeasures: ProjectMeasures, ...args: unknown[]): any {
-    let  calculatedProjectMeasures : {[k: string]: any} = {};
-    let  helpAverageList  = [];
+  transform(multipleLikertQuestions: ProjectMeasures | EventMeasures): any {
+    let  calculatedInput : {[k: string]: any} = {};
+    let  helpAverageList:any[]  = [];
 
-    for(let key in projectMeasures){
-      let keyHelp = key;
-      for(let key in projectMeasures.SatisfactionWithOutcome){ //todo: use key instead of SatisfactionWithOutcome
-        helpAverageList.push(this.average(projectMeasures.SatisfactionWithOutcome[key]))
+    for(let firstSet of Object.entries(multipleLikertQuestions)){
+      for(const secondSet of Object.entries(firstSet[1])){ //todo: use key instead of SatisfactionWithOutcome
+        helpAverageList.push(this.average(secondSet[1]))
       }
-      
-      calculatedProjectMeasures[keyHelp] = {avg : this.average(helpAverageList)}; //,standartDev..
-  }
-/*
-  Object.keys(projectMeasuresPipe)(element => {
-    
-  });
-*/
-  return calculatedProjectMeasures;
+      calculatedInput[firstSet[0]] = {avg : Math.round((this.average(helpAverageList) + Number.EPSILON) * 100) / 100}; //,standartDev..
+      helpAverageList = [];
+    }
 
-
+  return calculatedInput;
   }
 
 

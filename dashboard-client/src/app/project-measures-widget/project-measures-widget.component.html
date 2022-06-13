@@ -1,7 +1,7 @@
 <div class="card" *ngIf="formData">
     <div class="card-header">
         <div class="headInfo">
-            <span>Event Measures</span>
+            <span>Project Measures</span>
             <cds-icon shape="info-circle"></cds-icon>
         </div>
     </div>
@@ -9,7 +9,7 @@
         <div class="clr-row">
             <div class="clr-col-3">
                 <app-basic-score-display 
-                    [bestPossibleNumber]="5" 
+                    [bestPossibleNumber]="4" 
                     [scoreNumber]="formData.BehavioralControl.avg" 
                     [sd]="0.4"
                     [captionText]="'Satisfaction with outcome'"
@@ -18,7 +18,7 @@
             </div>
             <div class="clr-col-3">
                 <app-basic-score-display 
-                    [bestPossibleNumber]="5" 
+                    [bestPossibleNumber]="4" 
                     [scoreNumber]="formData.ContinuationIntentions.avg" 
                     [sd]="0.4"
                     [captionText]="'Precieved usefulness'"
@@ -27,7 +27,7 @@
             </div>
             <div class="clr-col-3">
                 <app-basic-score-display 
-                    [bestPossibleNumber]="5" 
+                    [bestPossibleNumber]="4" 
                     [scoreNumber]="formData.PerceivedUsefulness.avg" 
                     [sd]="0.4"
                     [captionText]="'Continuation intentions'"
@@ -36,7 +36,7 @@
             </div>
             <div class="clr-col-3">
                 <app-basic-score-display 
-                    [bestPossibleNumber]="5" 
+                    [bestPossibleNumber]="4" 
                     [scoreNumber]="formData.SatisfactionWithOutcome.avg" 
                     [sd]="0.4"
                     [captionText]="'Behavioral control'"
