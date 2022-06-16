@@ -1,0 +1,93 @@
+.clr-row {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.headInfo, .resize-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+div[class^="clr-col"] {
+    height: 100%;
+}
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.chart-wrapper {
+    flex-grow: 1;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.description {
+    padding: .5rem 0 .5rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tooltip {
+    align-self: flex-end;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: Center;
+    width: 100%;
+}
+
+div[class^="clr-col"] {
+    border: 0px solid lightgray;
+    box-shadow: -40px 0px 0px -39px lightgray;
+    height: 100%;
+}
+
+h6 {
+    margin: 0;
+    
+}
+.pie-chart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: .5rem;
+}
+
+.pie-chart-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media only screen and (max-width: 1500px) {
+    .pie-outer-chart-wrapper {
+        height: 60%;
+        width: 150%;
+        flex-shrink: 1;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .pie-outer-chart-wrapper {
+        height: 75%;
+        width: 100%;
+        flex-shrink: 1;
+    }
+}
+
+::ng-deep .legend-labels {
+    margin-top: 500px;
+}
