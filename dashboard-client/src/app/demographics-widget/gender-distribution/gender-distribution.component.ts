@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { gender } from 'src/models/enums/Gender';
 
 @Component({
   selector: 'app-gender-distribution',
@@ -7,12 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class GenderDistributionComponent implements OnInit {
 
-  answerList = [
-    {title: 'male', value: '35', percentage: '47'},
-    {title: 'female', value: '35', percentage: '47'},
-    {title: 'non binary', value: '5', percentage: '5'},
-    {title: 'N/A', value: '1', percentage: '1'},
-  ]
+  @Input()
+  genderData?: any;
 
   @Input()
   captionText?: string;

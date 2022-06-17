@@ -33,6 +33,10 @@ import { EventMeasuresWidgetFartherComponent } from "./event-measures-widget-far
 import { CommunityMeasuresWidgetComponent } from "./community-measures-widget/community-measures-widget.component";
 import { TeamCompositionComponent} from "./team-composition/team-composition.component";
 import { TeamProcessComponent} from "./team-process/team-process.component";
+import { DemographicsPipe } from './pipes/demographics.pipe';
+import { ProgrammingExperiencePipe } from './pipes/programming-experience.pipe';
+import { IndividualMeasuresPipe } from './pipes/individual-measures.pipe';
+import { MentoringPipe } from './pipes/mentoring.pipe';
 
 ClarityIcons.addIcons(cogIcon, resizeIcon, infoCircleIcon);
 
@@ -60,7 +64,11 @@ ClarityIcons.addIcons(cogIcon, resizeIcon, infoCircleIcon);
     TeamProcessComponent,
     polarChart,
     bubbleChart,
-    OpenAnswerListComponent
+    OpenAnswerListComponent,
+    DemographicsPipe,
+    ProgrammingExperiencePipe,
+    IndividualMeasuresPipe,
+    MentoringPipe
   ],
   imports: [
     BrowserModule,

@@ -9,41 +9,49 @@
         <div class="clr-row">
             <div class="clr-col-3">
                 <app-basic-score-display 
-                    [bestPossibleNumber]="4" 
-                    [scoreNumber]="formData.BehavioralControl.avg" 
-                    [sd]="0.4"
-                    [captionText]="'Satisfaction with outcome'"
-                    [captionTooltip]="'Shows the aggregated satisfaction with the project of the particular team.'">
-                </app-basic-score-display>
-            </div>
-            <div class="clr-col-3">
-                <app-basic-score-display 
-                    [bestPossibleNumber]="4" 
-                    [scoreNumber]="formData.ContinuationIntentions.avg" 
-                    [sd]="0.4"
-                    [captionText]="'Precieved usefulness'"
-                    [captionTooltip]="'Shows the aggregated precieved usefuless of the project of the particular team.'">
-                </app-basic-score-display>
-            </div>
-            <div class="clr-col-3">
-                <app-basic-score-display 
-                    [bestPossibleNumber]="4" 
-                    [scoreNumber]="formData.PerceivedUsefulness.avg" 
-                    [sd]="0.4"
-                    [captionText]="'Continuation intentions'"
-                    [captionTooltip]="'Shows the aggregated future intentions in relation to the project of the particular team.'">
-                </app-basic-score-display>
-            </div>
-            <div class="clr-col-3">
-                <app-basic-score-display 
-                    [bestPossibleNumber]="4" 
+                    [bestPossibleNumber]="5" 
                     [scoreNumber]="formData.SatisfactionWithOutcome.avg" 
-                    [sd]="0.4"
+                    [sd]="formData.SatisfactionWithOutcome.sd"
+                    [captionText]="'Satisfaction with outcome'"
+                    [captionTooltip]="'Shows the aggregated satisfaction with the project of the particular team. (1-5)'">
+                </app-basic-score-display>
+            </div>
+            <div class="clr-col-3">
+                <app-basic-score-display *ngIf="formData.PerceivedUsefulness !== null; else noDataToDisplay"
+                    [bestPossibleNumber]="5" 
+                    [scoreNumber]="formData.PerceivedUsefulness.avg" 
+                    [sd]="formData.PerceivedUsefulness.sd"
+                    [captionText]="'Precieved usefulness'"
+                    [captionTooltip]="'Shows the aggregated precieved usefuless of the project of the particular team. (1-5)'">
+                </app-basic-score-display>
+            </div>
+            <div class="clr-col-3">
+                <app-basic-score-display *ngIf="formData.ContinuationIntentions !== null; else noDataToDisplay"
+                    [bestPossibleNumber]="5" 
+                    [scoreNumber]="formData.ContinuationIntentions.avg" 
+                    [sd]="formData.ContinuationIntentions.sd"
+                    [captionText]="'Continuation intentions'"
+                    [captionTooltip]="'Shows the aggregated future intentions in relation to the project of the particular team. (1-5)'">
+                </app-basic-score-display>
+            </div>
+            <div class="clr-col-3">
+                <app-basic-score-display *ngIf="formData.BehavioralControl !== null; else noDataToDisplay"
+                    [bestPossibleNumber]="5" 
+                    [scoreNumber]="formData.BehavioralControl.avg" 
+                    [sd]="formData.BehavioralControl.sd"
                     [captionText]="'Behavioral control'"
-                    [captionTooltip]="'Shows the aggregated ability to continue to work on the project of the particular team.'"
+                    [captionTooltip]="'Shows the aggregated ability to continue to work on the project of the particular team. (1-5)'"
                     [tooltipLeft]="true">
                 </app-basic-score-display>
             </div>
         </div>
     </div>
 </div>
+
+<ng-template #noDataToDisplay>
+    <div class="no-data-wrapper">
+        <h4 style="margin: 0;">
+            This section was not part of the survey.
+        </h4>
+    </div>
+</ng-template>
