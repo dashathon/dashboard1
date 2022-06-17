@@ -8,16 +8,17 @@
     <div class="card-body">
         <div class="clr-row">
             <div class="clr-col-2">
-                <app-long-answers-list [captionTooltip]="'Shows the list of factors that participants would like their mentor to improve.'" [answerList]="answerList" [captionText]="'Opportunities for Improvement'"></app-long-answers-list>
+                <app-long-answers-list [captionTooltip]="'Shows the list of factors that participants would like their mentor to improve.'" [answerList]="formData.improvement" [captionText]="'Opportunities for Improvement'"></app-long-answers-list>
             </div>
             <div class="clr-col-10">
                 <div class="chart-container">
                     <div class="chart-wrapper">
                         <ngx-charts-bar-horizontal 
-                        [results]="barChartData"
+                        [results]="formData.percievedSupport"
                         [xAxis]="true"
                         [barPadding]="2"
                         [xScaleMax]="5"
+                        [xScaleMin]="1"
                         [showYAxisLabel]="true"
                         [yAxis]="true"
                         [trimYAxisTicks]="false"

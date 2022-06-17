@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class OpenAnswerListComponent implements OnInit {
 
   @Input()
-  answerList = Array<string>();
+  answerList = Array<any>();
 
   @Input()
   captionText?: string;

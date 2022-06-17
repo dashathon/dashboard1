@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" *ngIf="formData">
     <div class="card-header">
         <div class="headInfo">
             <span>Individual Programming Experience</span>
@@ -10,7 +10,7 @@
             <div class="clr-col-2">
                 <app-basic-score-display 
                     [captionTooltip]="'Shows the average amount of programming experience in years.'" 
-                    [scoreNumber]="2.8" 
+                    [scoreNumber]="formData.years" 
                     [captionText]="'Years of Programming experience'">
                 </app-basic-score-display>
             </div>
@@ -20,7 +20,7 @@
                         <div class="chart-wrapper">
                             <ngx-charts-pie-chart
                             appChartMarginRemoval
-                            [results]="progExpData"
+                            [results]="formData.comparedExperience"
                             [labels]="false"
                             [scheme]="'natural'">
                             </ngx-charts-pie-chart>
@@ -38,14 +38,14 @@
             </div>
             <div class="clr-col-4">
                 <app-comparison-average-sd-list
-                    [answerList]="exampleData"
+                    [answerList]="formData.ability"
                     [captionText]="'Percieved ABILITY at language'"
                     [captionTooltip]="'Shows the average reported ability in the specific language.'">
                 </app-comparison-average-sd-list>
             </div>
             <div class="clr-col-4">
                 <app-comparison-average-sd-list
-                    [answerList]="exampleData"
+                    [answerList]="formData.comfort"
                     [captionText]="'Percieved COMFORT at language'"
                     [captionTooltip]="'Shows the average reported comfort in using the specific language.'"
                     [tooltipLeft]="true">

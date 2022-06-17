@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" *ngIf="formData">
     <div class="card-header">
         <div class="headInfo">
             <span>Demographics & Background</span>
@@ -11,7 +11,7 @@
                 <div class="chart-container">
                     <div class="chart-wrapper">
                         <ngx-charts-bar-vertical
-                        [results]="barChartData"
+                        [results]="formData.age"
                         [xAxis]="true"
                         [barPadding]="2"
                         [showYAxisLabel]="true"
@@ -32,7 +32,7 @@
             </div>
             <div class="clr-col-2">
                 <app-comparison-average-sd-list
-                    [answerList]="exampleData"
+                    [answerList]="formData.education"
                     [captionText]="'Educational status'"
                     [captionTooltip]="'Shows the percentage of the highest reported educational status.'">
                 </app-comparison-average-sd-list>
@@ -43,7 +43,7 @@
                         <div class="pie-chart-wrapper">
                             <ngx-charts-pie-chart
                             appChartMarginRemoval
-                            [results]="minorityData"
+                            [results]="formData.minority"
                             [labels]="false"
                             [scheme]="'natural'"
                             [doughnut]="true"
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="clr-col-3">
-                <app-gender-distribution [captionText]="'Gender distribution'" [captionTooltip]="'Shows the distribution of genders.'"></app-gender-distribution>
+                <app-gender-distribution [genderData]="formData?.gender" [captionText]="'Gender distribution'" [captionTooltip]="'Shows the distribution of genders.'"></app-gender-distribution>
             </div>
         </div>
     </div>

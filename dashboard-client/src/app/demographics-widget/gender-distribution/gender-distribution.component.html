@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper" *ngIf="genderData">
     <div class="list-wrapper">
         <table class="table table-compact">
             <thead>
@@ -9,7 +9,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let item of answerList">
+                <tr *ngFor="let item of genderData">
                     <td class="left"><b>{{item.title}}</b></td>
                     <td class="left">{{item.value}}</td>
                     <td class="left">{{item.percentage}}%</td>
