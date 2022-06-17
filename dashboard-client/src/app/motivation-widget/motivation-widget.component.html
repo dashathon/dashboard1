@@ -16,7 +16,7 @@
             <div class="clr-col-8">
                 <div class="chart-container">
                     <div class="chart-wrapper">
-                        <ngx-charts-bar-horizontal 
+                        <ngx-charts-bar-horizontal
                         [results]="barChartData"
                         [xAxis]="true"
                         [barPadding]="2"
@@ -36,3 +36,41 @@
         </div>
     </div>
 </div>
+<!--<div class="card">-->
+<!--    <div class="card-header">-->
+<!--        <div class="headInfo">-->
+<!--            <span>Individual Measures</span>-->
+<!--            <cds-icon shape="info-circle"></cds-icon>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="card-body">-->
+<!--        <div class="clr-row">-->
+<!--            <div class="clr-col-2">-->
+<!--                <app-basic-score-display [captionTooltip]="'Shows the average amount of participations in similar events before.'" [scoreNumber]="2.8" [captionText]="'Other Event Participations'"></app-basic-score-display>-->
+<!--            </div>-->
+<!--            <div class="clr-col-2">-->
+<!--                <app-open-answer-list [captionTooltip]="'Shows additionally reported motivations.'" [answerList]="answerList" [captionText]="'Other Motivations'"></app-open-answer-list>-->
+<!--            </div>-->
+<!--            <div class="clr-col-8">-->
+<!--                <div class="chart-container">-->
+<!--                    <div class="chart-wrapper">-->
+<!--                        <ngx-charts-bar-horizontal -->
+<!--                        [results]="barChartData"-->
+<!--                        [xAxis]="true"-->
+<!--                        [barPadding]="2"-->
+<!--                        [xScaleMax]="5"-->
+<!--                        [showYAxisLabel]="true"-->
+<!--                        [yAxis]="true"-->
+<!--                        [scheme]="'natural'">-->
+<!--                        </ngx-charts-bar-horizontal>-->
+<!--                    </div>-->
+<!--                    <clr-tooltip><h6 class="description" clrTooltipTrigger>Motivation Distribution</h6>-->
+<!--                    <clr-tooltip-content clrPosition="top-right" clrSize="lg" *clrIfOpen>-->
+<!--                        <span>Shows the average approval towards each statement by the participants.</span>-->
+<!--                    </clr-tooltip-content>-->
+<!--                    </clr-tooltip>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->

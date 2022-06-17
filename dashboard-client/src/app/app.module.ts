@@ -15,6 +15,8 @@ import { BasicWidgetComponent } from './basic-widget/basic-widget.component';
 import { BasicScoreDisplayComponent } from './basic-score-display/basic-score-display.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MotivationWidgetComponent } from './motivation-widget/motivation-widget.component';
+import { polarChart} from "./polar-chart/polar-chart";
+import { bubbleChart} from "./bubble-chart/bubble-chart";
 import { OpenAnswerListComponent } from './open-answer-list/open-answer-list.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { MentoringWidgetComponent } from './mentoring-widget/mentoring-widget.component';
@@ -26,6 +28,11 @@ import { DemographicsWidgetComponent } from './demographics-widget/demographics-
 import { GenderDistributionComponent } from './demographics-widget/gender-distribution/gender-distribution.component';
 import { ProjectMeasuresWidgetComponent } from './project-measures-widget/project-measures-widget.component';
 import { ProjectMeasuresPipe } from './pipes/project-measures.pipe';
+import { EventMeasuresWidgetComponent } from "./event-measures-widget/event-measures-widget.component";
+import { EventMeasuresWidgetFartherComponent } from "./event-measures-widget-farther/event-measures-widget-farther.component";
+import { CommunityMeasuresWidgetComponent } from "./community-measures-widget/community-measures-widget.component";
+import { TeamCompositionComponent} from "./team-composition/team-composition.component";
+import { TeamProcessComponent} from "./team-process/team-process.component";
 
 ClarityIcons.addIcons(cogIcon, resizeIcon, infoCircleIcon);
 
@@ -45,7 +52,15 @@ ClarityIcons.addIcons(cogIcon, resizeIcon, infoCircleIcon);
     DemographicsWidgetComponent,
     GenderDistributionComponent,
     ProjectMeasuresWidgetComponent,
-    ProjectMeasuresPipe
+    ProjectMeasuresPipe,
+    EventMeasuresWidgetComponent,
+    EventMeasuresWidgetFartherComponent,
+    CommunityMeasuresWidgetComponent,
+    TeamCompositionComponent,
+    TeamProcessComponent,
+    polarChart,
+    bubbleChart,
+    OpenAnswerListComponent
   ],
   imports: [
     BrowserModule,

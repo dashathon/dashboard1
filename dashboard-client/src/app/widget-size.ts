@@ -5,7 +5,8 @@ export enum widegts {
     projectMeasures,
     mentoring,
     communityMeasures,
-    eventMeasures,
+    eventMeasures1,
+    eventMeasures2,
     individualProgramming,
     demographics
 }

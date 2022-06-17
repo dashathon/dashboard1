@@ -1,0 +1,34 @@
+<div class="card high-card">
+  <div class="card-header">
+    <div class="headInfo">
+      <span>Experience</span>
+      <cds-icon shape="info-circle"></cds-icon>
+    </div>
+    <div>
+      <cds-icon shape="resize"></cds-icon>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="clr-row">
+      <div class="clr-col-3 flex-display">
+        <!-- <app-basic-score-display [scoreNumber]="0.7" [captionText]="'Best possible solution'" [bestPossibleNumber]="4"></app-basic-score-display> -->
+        <div class="chart-container" >
+          <div class="chart-wrapper">
+            <ngx-charts-polar-chart
+              [legend]="legend"
+              [legendTitle]="legendTitle"
+              [showXAxisLabel]="showXAxisLabel"
+              [showYAxisLabel]="showYAxisLabel"
+              [xAxis]="xAxis"
+              [yAxis]="yAxis"
+              [xAxisLabel]="xAxisLabel"
+              [yAxisLabel]="yAxisLabel"
+              [results]="multi">
+            </ngx-charts-polar-chart>
+          </div>
+          <h6>satisfaction-usefulness-polar</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
