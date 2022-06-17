@@ -55,13 +55,14 @@ div[class^="clr-col"] {
 
 h6 {
     margin: 0;
-    
+
 }
 .pie-chart-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    width: 100%;
     box-sizing: border-box;
     padding-top: .5rem;
 }
