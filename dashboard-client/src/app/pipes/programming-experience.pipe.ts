@@ -44,8 +44,6 @@ export class ProgrammingExperiencePipe implements PipeTransform {
       calculatedInputs.comparedExperience[entry].value = calculatedInputs.comparedExperience[entry].value + 1;
     }
 
-    console.log(calculatedInputs);
-
     return calculatedInputs;
   }
 

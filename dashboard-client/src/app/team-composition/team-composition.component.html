@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" *ngIf="formData">
     <div class="card-header">
         <div class="headInfo">
             <span>Team Composition</span>
@@ -7,38 +7,80 @@
     </div>
     <div class="card-body">
         <div class="clr-row">
-            <div class="clr-col-7">
+            <div class="clr-col-2">
+                <app-long-answers-list
+                    [captionTooltip]="'Team Names'" 
+                    [captionText]="'The Name of Teams participating'"
+                    [answerList]="formData.teamID">
+                </app-long-answers-list>
+            </div>
+            <div class="clr-col-2">
+                <app-basic-score-display 
+                    [captionTooltip]="'Average Team size'" 
+                    [scoreNumber]="formData.teamSize" 
+                    [captionText]="'The Number of People'">
+                </app-basic-score-display>
+            </div>
+            <div class="clr-col-2">
+                <app-long-answers-list 
+                [captionTooltip]="'Shows the provided URL.'" 
+                [answerList]="formData.resourcesURL" 
+                [captionText]="'ResourcesURL'"></app-long-answers-list>
+            </div>
+            <div class="clr-col-2">
                 <div class="chart-container">
                     <div class="chart-wrapper">
-                        <ngx-charts-bar-vertical-2d [results]="barChartData" [xAxis]="true" [barPadding]="4"
-                            [yScaleMax]="100" [showYAxisLabel]="false" [yAxis]="true" [trimYAxisTicks]="false"
-                            [scheme]="'natural'">
-                        </ngx-charts-bar-vertical-2d>
+                        <ngx-charts-bar-vertical [results]="formData.TeamLeader" [xAxis]="true" [barPadding]="4"
+                        [showYAxisLabel]="false" [showXAxisLabel]="false" [yAxis]="true" [trimXAxisTicks]="true"
+                        [scheme]="'natural'" [rotateXAxisTicks]="false" [maxXAxisTickLength]="7">
+                        </ngx-charts-bar-vertical>
                     </div>
                     <clr-tooltip>
-                        <h6 class="description" clrTooltipTrigger>Basic Information</h6>
-
+                        <h6 class="description" clrTooltipTrigger>Team Leader</h6>
+                        <clr-tooltip-content clrPosition="top-left" clrSize="lg" *clrIfOpen>
+                            <span>Shows the answers towards the apperance of a Team Leader.</span>
+                        </clr-tooltip-content>
                     </clr-tooltip>
 
                 </div>
             </div>
-            <div class="clr-col-5">
-                <div class="pie-chart-container">
-                    <div class="pie-outer-chart-wrapper">
-                        <div class="pie-chart-wrapper">
-                            <ngx-charts-pie-chart appChartMarginRemoval [results]="pieChartData" [labels]="false"
-                                [scheme]="'natural'" [doughnut]="true" [arcWidth]="1" [legend]="true"
-                                [legendTitle]="''" [legendPosition]="right" >
-                            </ngx-charts-pie-chart>
-                        </div>
+            <div class="clr-col-2">
+                <div class="chart-container">
+                    <div class="chart-wrapper">
+                        <ngx-charts-bar-vertical [results]="formData.TeamManager" [xAxis]="true" [barPadding]="4"
+                            [showYAxisLabel]="false" [showXAxisLabel]="false" [yAxis]="true" [trimXAxisTicks]="true"
+                            [scheme]="'natural'" [rotateXAxisTicks]="false" [maxXAxisTickLength]="7">
+                        </ngx-charts-bar-vertical>
                     </div>
-                        <clr-tooltip>
-                            <h6 class="description" clrTooltipTrigger>Team Members Familiarity</h6>
+                    <clr-tooltip>
+                        <h6 class="description" clrTooltipTrigger>Team Manager</h6>
+                        <clr-tooltip-content clrPosition="top-left" clrSize="lg" *clrIfOpen>
+                            <span>Shows the answers towards the apperance of a Team Manager.</span>
+                        </clr-tooltip-content>
+                    </clr-tooltip>
 
-                        </clr-tooltip>
-                    </div>
                 </div>
+            </div>
+            <div class="clr-col-2">
+                <div class="chart-container">
+                    <div class="chart-wrapper">
+                        <ngx-charts-bar-vertical [results]="formData.SocialLeader" [xAxis]="true" [barPadding]="4"
+                        [showYAxisLabel]="false" [showXAxisLabel]="false" [yAxis]="true" [trimXAxisTicks]="true"
+                        [scheme]="'natural'" [rotateXAxisTicks]="false" [maxXAxisTickLength]="7">
+                        </ngx-charts-bar-vertical>
+                    </div>
+                    <clr-tooltip>
+                        <h6 class="description" clrTooltipTrigger>Social Leader</h6>
+                        <clr-tooltip-content clrPosition="top-left" clrSize="lg" *clrIfOpen>
+                            <span>Shows the answers towards the apperance of a Social Leader.</span>
+                        </clr-tooltip-content>
+                    </clr-tooltip>
+
+                </div>
+            </div>
+          
+            
+            </div>
         </div>
     </div>
-</div>
 

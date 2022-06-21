@@ -37,6 +37,8 @@ import { DemographicsPipe } from './pipes/demographics.pipe';
 import { ProgrammingExperiencePipe } from './pipes/programming-experience.pipe';
 import { IndividualMeasuresPipe } from './pipes/individual-measures.pipe';
 import { MentoringPipe } from './pipes/mentoring.pipe';
+import { TeamCompositionPipe } from './pipes/team-composition.pipe';
+import { TeamProcessPipe } from './pipes/team-process.pipe';
 
 ClarityIcons.addIcons(cogIcon, resizeIcon, infoCircleIcon);
 
@@ -68,7 +70,9 @@ ClarityIcons.addIcons(cogIcon, resizeIcon, infoCircleIcon);
     DemographicsPipe,
     ProgrammingExperiencePipe,
     IndividualMeasuresPipe,
-    MentoringPipe
+    MentoringPipe,
+    TeamCompositionPipe,
+    TeamProcessPipe
   ],
   imports: [
     BrowserModule,
