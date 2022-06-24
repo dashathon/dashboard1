@@ -1,7 +1,6 @@
 export enum education{
     HighSchool,
-    SomeCollege,
-    Associate,
+    CollegeAssociateBachelor,
     Bachelor,
     Professional,
     Master,

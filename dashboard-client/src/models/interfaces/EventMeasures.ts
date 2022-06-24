@@ -14,6 +14,8 @@ export interface EventMeasures {
     SessionUsefulness: Session[];
     SessionEnjoyment:  Session[];
     GoodEvent: string[];
+    ImproveEvent: string[] //421
+    OpenSharing: string[]; //todo: einspeichern mit id 431
 }
 
 export interface Session {
