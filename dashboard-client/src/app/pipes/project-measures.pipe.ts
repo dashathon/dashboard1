@@ -15,7 +15,8 @@ export class ProjectMeasuresPipe implements PipeTransform {
 
     for(let firstSet of Object.entries(multipleLikertQuestions)){
       for(const secondSet of Object.entries(firstSet[1])){
-        if ((secondSet[1] as []).length !== 0){
+
+        if ((secondSet[1] as []).length !== 0 && (secondSet[1] as any[])[0] !== null){
           helpAverageList.push(average(secondSet[1]));
           helpSdList.push(standardDeviation(secondSet[1]));
         }

@@ -22,13 +22,8 @@ export class ShellComponent implements OnInit {
   constructor(private formService: FormService) { }
 
   ngOnInit(): void {
-    
-    for (let index = 0; index < 50; index++) {
-      this.responseService.parseUser();
-    }
+    this.responseService.parseUser();
     console.log(this.responseService);
-
-
   }
 
   public get widgets(): typeof widegts {

@@ -26,8 +26,7 @@ export class DemographicsPipe implements PipeTransform {
       {name: 'no', value: 0},
       {name: 'Prefer not to say', value: 0}],
       education: [{title: 'High school diploma or GED', percentage: 0},
-      {title: 'Some college', percentage: 0},
-      {title: 'Associate and/or bachelor\'s degree', percentage: 0},
+      {title: 'Some college, Associate and/or bachelor\'s degree', percentage: 0},
       {title: 'Bachelor\s degree', percentage: 0},
       {title: 'Professional degree', percentage: 0},
       {title: 'Master\s degree', percentage: 0},
@@ -55,7 +54,7 @@ export class DemographicsPipe implements PipeTransform {
 
     //Fill Education
     for(let entry of demographics.Education) {
-      calculatedInputs.education[entry].percentage = calculatedInputs.education[entry].percentage + 1;
+      if (entry) calculatedInputs.education[entry].percentage = calculatedInputs.education[entry].percentage + 1;
     }
     for (let entry of calculatedInputs.education){
       entry.percentage = Math.floor(entry.percentage / demographics.Education.length * 100);

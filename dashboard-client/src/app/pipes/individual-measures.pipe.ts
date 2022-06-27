@@ -8,15 +8,15 @@ import { average } from '../shared/average';
 export class IndividualMeasuresPipe implements PipeTransform {
 
   transform(individualMeasures: IndividualMeasures): any {
-    
+
     let calculatedInputs = {
       participations: 0,
       otherMotivations: [] as any[],
       motivationDistribution: [] as any[]
     }
-    
+
     //Fill participations
-    calculatedInputs.participations = Math.round(average(individualMeasures.EventParticipation));
+    calculatedInputs.participations = Math.round(average(individualMeasures.EventParticipation.filter(value => !isNaN(value))));
 
     //Fill motivation distribution
     for (let entry of Object.entries(individualMeasures.Motivation)) {
@@ -28,7 +28,8 @@ export class IndividualMeasuresPipe implements PipeTransform {
     }
 
     //Fill other motivations
-    this.count(individualMeasures.MotivationOther, calculatedInputs.otherMotivations);
+
+    this.count(individualMeasures.MotivationOther.filter(text => text !== undefined), calculatedInputs.otherMotivations);
 
     return calculatedInputs;
   }
@@ -43,7 +44,7 @@ export class IndividualMeasuresPipe implements PipeTransform {
         if (cnt > 0) {
           target.push({
             "text": current,
-            "amount": cnt 
+            "amount": cnt
           });
         }
         current = array[i];
@@ -55,7 +56,7 @@ export class IndividualMeasuresPipe implements PipeTransform {
     if (cnt > 0) {
       target.push({
         "text": current,
-        "amount": cnt 
+        "amount": cnt
       });
     }
   }

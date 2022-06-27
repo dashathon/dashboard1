@@ -37,7 +37,8 @@ export class ProgrammingExperiencePipe implements PipeTransform {
     this.averageAndSdListCalculation(programmingExperience.ProgrammingComfort, calculatedInputs.comfort);
 
     //Fill years of experience
-    calculatedInputs.years = Math.floor(average(programmingExperience.ProgrammingExperienceYears));
+
+    calculatedInputs.years = Math.floor(average(programmingExperience.ProgrammingExperienceYears.filter(year => !isNaN(year))));
 
     //Fill compared experience
     for (let entry of programmingExperience.ProgrammingExperienceComparison) {

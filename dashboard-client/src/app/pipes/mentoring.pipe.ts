@@ -15,7 +15,8 @@ export class MentoringPipe implements PipeTransform {
     }
 
     //Fill improvement opportunities
-    calculatedInput.improvement = mentoring.MentoringOther;
+
+    calculatedInput.improvement = mentoring.MentoringOther.filter(text => text !== undefined);
 
     //Fill percieved Support
     for(let entry of Object.entries(mentoring.MentoringExperience)) {
@@ -29,7 +30,7 @@ export class MentoringPipe implements PipeTransform {
 
     return calculatedInput;
 
-    
+
   }
 
 }
