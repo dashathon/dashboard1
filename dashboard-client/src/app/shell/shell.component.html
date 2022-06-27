@@ -31,7 +31,8 @@
                     [formData]="(responseService.individualProgrammingExperience|programmingExperiencePipe)"></app-programming-experience-widget>
                     <app-demographics-widget *ngIf="distribution.first === widgets.demographics"
                     [formData]="(responseService.demographicsIndividualBackground|demographicsPipe)"></app-demographics-widget>
-                    <app-team-process *ngIf="distribution.first === widgets.teamProcess"></app-team-process>
+                    <app-team-process *ngIf="distribution.first === widgets.teamProcess"
+                    [formData]="(responseService.teamProcess|teamProcessPipe)"></app-team-process>
                 </div>
             </div>
             <div class="clr-row">
@@ -53,7 +54,8 @@
                     <app-mentoring-widget *ngIf="distribution.second === widgets.mentoring"
                     [formData]="(responseService.mentoring|mentoringPipe)"></app-mentoring-widget>
                     <app-community-measures-widget *ngIf="distribution.second === widgets.communityMeasures"></app-community-measures-widget>
-                    <app-team-composition *ngIf="distribution.second === widgets.teamComposition"></app-team-composition>
+                    <app-team-composition *ngIf="distribution.second === widgets.teamComposition"
+                    [formData]="(responseService.teamComposition|teamCompositionPipe)"></app-team-composition>
                 </div>
             </div>
             <div class="clr-row">

@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" *ngIf="formData">
     <div class="card-header">
         <div class="headInfo">
             <span>Team Process</span>
@@ -11,33 +11,45 @@
                 <div class="chart-container">
                     <div class="chart-wrapper">
 
-                        <ngx-charts-bar-vertical-2d [results]="columnChartData" [xAxis]="true" [barPadding]="2"
-                            [yScaleMax]="20" [showYAxisLabel]="true" [yAxis]="true" [trimYAxisTicks]="true"
+                        <ngx-charts-bar-vertical-2d [results]="formData.columnChartData" [xAxis]="true" [barPadding]="2"
+                            [showYAxisLabel]="true" [yAxis]="true" [trimYAxisTicks]="true"
                             [scheme]="'natural'">
                         </ngx-charts-bar-vertical-2d>
                     </div>
 
                     <clr-tooltip>
                         <h6 class="description" clrTooltipTrigger>Satisfaction With Process</h6>
-
+                        <clr-tooltip-content clrPosition="top-left" clrSize="lg" *clrIfOpen>
+                            <span>
+                                Shows the average approval towards each statement by 
+                                the participants where positive and negative scores are tendencies 
+                                combining extreme and less extreme approval.
+                            </span>
+                        </clr-tooltip-content>
                     </clr-tooltip>
-
-
                 </div>
             </div>
+            
             <div class="clr-col-8">
                 <div class="chart-container">
                     <div class="chart-wrapper">
-                        <ngx-charts-bar-horizontal-stacked [results]="voiceChartData" [xAxis]="true" [barPadding]="5"
-                            [xScaleMax]="30" [showYAxisLabel]="true" [yAxis]="true" [trimYAxisTicks]="false"
-                            [scheme]="'natural'">
-                        </ngx-charts-bar-horizontal-stacked>
+                        <ngx-charts-bar-horizontal
+                        [results]="formData.voiceChartData"
+                        [xAxis]="true"
+                        [barPadding]="2"
+                        [xScaleMax]="5"
+                        [xScaleMin]="1"
+                        [showYAxisLabel]="true"
+                        [yAxis]="true"
+                        [trimYAxisTicks]="false"
+                        [scheme]="'natural'">
+                        </ngx-charts-bar-horizontal>
                     </div>
-                    <clr-tooltip>
-                        <h6 class="description" clrTooltipTrigger>Team Voice</h6>
-                        
+                    <clr-tooltip><h6 class="description" clrTooltipTrigger>Team Voice</h6>
+                    <clr-tooltip-content clrPosition="top-left" clrSize="lg" *clrIfOpen>
+                        <span>Shows the average approval towards each statement by the participants.</span>
+                    </clr-tooltip-content>
                     </clr-tooltip>
-
                 </div>
             </div>
         </div>
