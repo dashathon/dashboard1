@@ -53,7 +53,8 @@
                 <div class="clr-col-11">
                     <app-mentoring-widget *ngIf="distribution.second === widgets.mentoring"
                     [formData]="(responseService.mentoring|mentoringPipe)"></app-mentoring-widget>
-                    <app-community-measures-widget *ngIf="distribution.second === widgets.communityMeasures"></app-community-measures-widget>
+                    <app-community-measures-widget *ngIf="distribution.second === widgets.communityMeasures"
+                    [formData]="(responseService.communityMeasures|communityMeasuresPipe)"></app-community-measures-widget>
                     <app-team-composition *ngIf="distribution.second === widgets.teamComposition"
                     [formData]="(responseService.teamComposition|teamCompositionPipe)"></app-team-composition>
                 </div>
@@ -61,8 +62,8 @@
             <div class="clr-row">
                 <div class="clr-col-1 button-list border">
                     <button (click)="distribution.third = widgets.individualMeasures" [ngClass]="distribution.third === widgets.individualMeasures ? 'btn-primary' : 'btn-link'" class="btn">Individual Measures</button>
-                    <button (click)="distribution.third = widgets.eventMeasures1" [ngClass]="distribution.third === widgets.eventMeasures1 ? 'btn-primary' : 'btn-link'" class="btn">Event Measures1</button>
-                    <button (click)="distribution.third = widgets.eventMeasures2" [ngClass]="distribution.third === widgets.eventMeasures2 ? 'btn-primary' : 'btn-link'" class="btn">Event Measures2</button>
+                    <button (click)="distribution.third = widgets.eventMeasures1" [ngClass]="distribution.third === widgets.eventMeasures1 ? 'btn-primary' : 'btn-link'" class="btn">Event Measures</button>
+                    <button (click)="distribution.third = widgets.eventMeasures2" [ngClass]="distribution.third === widgets.eventMeasures2 ? 'btn-primary' : 'btn-link'" class="btn">Recommendations</button>
                     <button (click)="distribution.third = widgets.projectMeasures"
                      [ngClass]="distribution.third === widgets.projectMeasures ? 'btn-primary' : 'btn-link'" class="btn">
                      Project Measures
@@ -73,8 +74,10 @@
                     [formData]="(responseService.individualMeasures|individualMeasuresPipe)"></app-motivation-widget>
                     <app-project-measures-widget *ngIf="distribution.third === widgets.projectMeasures"
                     [formData]="(responseService.projectMeasures|projectMeasuresPipe)"></app-project-measures-widget>
-                    <app-event-measures-widget *ngIf="distribution.third === widgets.eventMeasures1"></app-event-measures-widget>
-                    <app-event-measures-widget-farther *ngIf="distribution.third === widgets.eventMeasures2"></app-event-measures-widget-farther>
+                    <app-event-measures-widget *ngIf="distribution.third === widgets.eventMeasures1"
+                    [formData]="(responseService.eventMeasures|eventMeasuresPipe)" ></app-event-measures-widget>
+                    <app-event-measures-widget-farther *ngIf="distribution.third === widgets.eventMeasures2"
+                    [formData]="(responseService.eventMeasures|eventMeasuresFartherPipe)"></app-event-measures-widget-farther>
 <!--                    <app-polar-chart *ngIf="distribution.third === widgets.eventMeasures"></app-polar-chart>-->
 <!--                    <app-motivation-widget *ngIf="distribution.third === widgets.individualMeasures"></app-motivation-widget>-->
                 </div>

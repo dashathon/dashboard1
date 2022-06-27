@@ -1,23 +1,23 @@
-<div class="card">
+<div class="card" *ngIf="formData">
   <div class="card-header">
     <div class="headInfo">
-      <span>event measures1</span>
+      <span>Recommendations</span>
       <cds-icon shape="info-circle"></cds-icon>
     </div>
   </div>
   <div class="card-body">
     <div class="clr-row">
       <div class="clr-col-3">
-        <app-basic-score-display [captionTooltip]="'Shows the average amount of RecommendationLikelyness in similar hackathon.'" [scoreNumber]="7.8" [captionText]="'RecommendationLikelyness'"></app-basic-score-display>
+        <app-basic-score-display [captionTooltip]="'Shows the Likeliness of Recommending a similar hackathon to a friend.'" [scoreNumber]="formData.RecommendationInput" [bestPossibleNumber]="10" [captionText]="'Recommendation Likeliness'"></app-basic-score-display>
       </div>
       <div class="clr-col-3">
-        <app-long-answers-list [captionTooltip]="'Shows the list of factors that participants would like their mentor to improve.'" [answerList]="goodEvent" [captionText]="'GoodEvent'"></app-long-answers-list>
+        <app-long-answers-list [captionTooltip]="'Shows what people think was good about a event.'" [answerList]="formData.goodInput" [captionText]="'Positive Event Experiences'"></app-long-answers-list>
       </div>
       <div class="clr-col-3">
-        <app-long-answers-list [captionTooltip]="'Shows the list of factors that participants would like their mentor to improve.'" [answerList]="improveEvent" [captionText]="'ImproveEvent'"></app-long-answers-list>
+        <app-long-answers-list [captionTooltip]="'Shows what people think that could be improved as recommendations.'" [answerList]="formData.ImproveEvent" [captionText]="'Recommendations for Improvement'"></app-long-answers-list>
       </div>
       <div class="clr-col-3">
-        <app-long-answers-list [captionTooltip]="'Shows the list of factors that participants would like their mentor to improve.'" [answerList]="openSharing" [captionText]="'OpenSharing'"></app-long-answers-list>
+        <app-long-answers-list [captionTooltip]="'Shows what people also want to share with you.'" [answerList]="formData.OpenSharing" [captionText]="'Open Shared Recommendations'"></app-long-answers-list>
       </div>
     </div>
   </div>

@@ -39,6 +39,10 @@ import { IndividualMeasuresPipe } from './pipes/individual-measures.pipe';
 import { MentoringPipe } from './pipes/mentoring.pipe';
 import { TeamCompositionPipe } from './pipes/team-composition.pipe';
 import { TeamProcessPipe } from './pipes/team-process.pipe';
+import { EventMeasuresPipe } from "./pipes/event-measures.pipe";
+import { EventMeasuresFartherPipe } from "./pipes/event-measures-farther.pipe";
+import { CommunityMeasuresPipe } from "./pipes/community-measures.pipe";
+import {PolarChartMarginRemovalDirective} from "./directives/polar-chart-margin-removal.directive";
 
 ClarityIcons.addIcons(cogIcon, resizeIcon, infoCircleIcon);
 
@@ -72,7 +76,11 @@ ClarityIcons.addIcons(cogIcon, resizeIcon, infoCircleIcon);
     IndividualMeasuresPipe,
     MentoringPipe,
     TeamCompositionPipe,
-    TeamProcessPipe
+    TeamProcessPipe,
+    EventMeasuresPipe,
+    EventMeasuresFartherPipe,
+    CommunityMeasuresPipe,
+    PolarChartMarginRemovalDirective
   ],
   imports: [
     BrowserModule,

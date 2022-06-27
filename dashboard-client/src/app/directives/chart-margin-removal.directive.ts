@@ -1,5 +1,5 @@
 import { Directive, Self } from '@angular/core';
-import { PieChartComponent } from '@swimlane/ngx-charts';
+import {PieChartComponent, PolarChartComponent} from '@swimlane/ngx-charts';
 
 @Directive({
   selector: '[appChartMarginRemoval]'
@@ -7,7 +7,6 @@ import { PieChartComponent } from '@swimlane/ngx-charts';
 export class ChartMarginRemovalDirective {
 
   constructor(@Self() pieChart: PieChartComponent) {
-    pieChart.margins = [0, 0, 5, 0];
-  }
-
+      pieChart.margins = [0, 0, 5, 0];
+    }
 }

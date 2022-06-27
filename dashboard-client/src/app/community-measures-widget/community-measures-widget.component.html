@@ -1,16 +1,16 @@
-<div class="card">
+<div class="card" *ngIf="formData">
   <div class="card-header">
     <div class="headInfo">
-      <span>Demographics & Background</span>
+      <span>Community Measures</span>
       <cds-icon shape="info-circle"></cds-icon>
     </div>
   </div>
   <div class="card-body">
     <div class="clr-row">
-      <div class="clr-col-7">
+      <div class="clr-col-6">
         <div class="chart-container">
           <div class="chart-wrapper">
-            <ngx-charts-bar-vertical
+            <ngx-charts-bar-horizontal
               [legend]="community_legend"
               [legendTitle]="community_legendTitle"
               [scheme]="'natural'"
@@ -20,7 +20,7 @@
               [showYAxisLabel]="community_showYAxisLabel"
               [xAxisLabel]="community_xAxisLabel"
               [yAxisLabel]="community_yAxisLabel"
-              [results]="CommunityData"
+              [results]="formData.CommunityData"
               [xAxis]="true"
               [barPadding]="2"
               [showYAxisLabel]="true"
@@ -30,7 +30,7 @@
               [rotateXAxisTicks]="false"
               [trimXAxisTicks]="true"
               [maxXAxisTickLength]="7">
-            </ngx-charts-bar-vertical>
+            </ngx-charts-bar-horizontal>
           </div>
           <clr-tooltip><h6 class="description" clrTooltipTrigger>CommunityIdentification</h6>
             <clr-tooltip-content clrPosition="top-right" clrSize="lg" *clrIfOpen>
@@ -40,23 +40,23 @@
         </div>
       </div>
 
-      <div class="clr-col-5">
+      <div class="clr-col-6">
         <div class="chart-container">
           <div class="chart-wrapper">
             <div class="chart-wrapper">
-              <ngx-charts-bar-vertical
+              <ngx-charts-bar-horizontal
 
-                [results]="SocialData"
+                [results]="formData.SocialData"
                 [xAxis]="true"
                 [barPadding]="2"
                 [showYAxisLabel]="true"
                 [yAxis]="true"
-                [trimYAxisTicks]="false"
+                [trimYAxisTicks]="true"
                 [scheme]="'natural'"
                 [rotateXAxisTicks]="false"
                 [trimXAxisTicks]="true"
-                [maxXAxisTickLength]="7">
-              </ngx-charts-bar-vertical>
+                [maxYAxisTickLength]="Social_maxYAxisTickLength">
+              </ngx-charts-bar-horizontal>
             </div>
           </div>
           <div class="tooltip-container">
