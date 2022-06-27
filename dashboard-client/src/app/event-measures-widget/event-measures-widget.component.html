@@ -76,3 +76,23 @@
     </div>
   </div>
 </div>
+
+<ng-template #noOverallExperienceData>
+  <app-no-data
+  [captionTooltip]="'Shows the OVERALL EXPERIENCE of people participating in this hackathon.'" 
+  [captionText]="'Overall Experience'">
+  </app-no-data>
+</ng-template>
+<ng-template #noSocialData>
+  <app-no-data
+  [captionTooltip]="'Shows the rating about how satisfied, useful and helpful in the following sessions.'"
+  [captionText]="'Rating about Satisfaction, Usefulness and Helpfulness'">
+  </app-no-data>
+</ng-template>
+<ng-template #noParticipationData>
+  <app-no-data
+  [captionTooltip]="'Shows weather a participant plans to participate in a similar event in the future or not.'"
+  [captionText]="'Future Participation Intentions'"
+  [tooltipLeft]="true">
+  </app-no-data>
+</ng-template>
